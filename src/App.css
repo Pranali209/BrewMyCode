@@ -1,0 +1,151 @@
+@import "react-alice-carousel/lib/alice-carousel.css";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body {
+  font-family: 'Poppins';
+}
+
+.Elemt {
+ 
+  border-radius: 30px;
+  background: #FFFFFF; /* White background */
+
+  box-shadow: 15px 15px 30px rgba(200, 200, 200, 1),
+              -15px -15px 30px rgba(255, 255, 255, 1); /* Adjusted box-shadow for white background */
+}
+
+.react-calendar {
+  width: 637px;
+}
+
+
+
+@keyframes moveDot {
+
+  0%,
+  100% {
+    top: 1%;
+    right: 1%;
+  }
+
+  25% {
+    top: 1%;
+    right: calc(110% - 35px);
+  }
+
+  50% {
+    top: calc(110% - 30px);
+    right: calc(110% - 35px);
+  }
+
+  75% {
+    top: calc(110% - 30px);
+    right: 1%;
+  }
+}
+
+.bgimage {
+ 
+ 
+  animation: moveImage  5s linear infinite;
+}
+
+@keyframes moveImage {
+  
+  0%  { transform: translate(0, 0) }
+  20%  { transform: translate(50px, -80px) }
+  40% { transform: translate(200px, 40px) }
+  60% { transform: translate(-150px, 100px) }
+  80% { transform: translate(-260px, 40px); }
+  100% { transform: translate(0px, 0px) }
+}
+
+@keyframes bubble {
+  0% {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(1.1);
+  }
+  100% {
+      transform: scale(1);
+  }
+}
+
+.bubble-effect {
+  animation: bubble 2s infinite;
+}
+.inner-shadow { box-shadow: inset -10.96px -6.39px 26.3px 0px rgba(48, 218, 255, 0.52); 
+}
+.inner-shadow1 { box-shadow: inset -11.07px -6.49px 26.72px 0px rgba(243, 231, 16, 0.52); 
+}
+
+.inner-shadow2 { box-shadow: inset -11.16px -6.49px 26.72px 0px rgba(255, 67, 67, 0.52); 
+}
+
+.inner-shadow3 { box-shadow: inset -11.16px -6.49px 26.72px 0px rgba(255, 54, 150, 0.52); 
+}
+
+.inner-shadow4 { box-shadow: inset -11.16px -6.49px 26.72px 0px rgba(65, 255, 106, 0.52); 
+}
+
+  
+  
+@media (max-width: 768px) {
+  .slider-container {
+  display: flex;
+  transition: transform 1s ease-in-out;
+  width: 100%;
+}
+.slide {
+  flex: 0 0 100%;
+  max-width: 80%;
+  width: 80%;
+}
+}
+@media (min-width: 320px) and (max-width: 350px) {
+  .footeraligment {
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2.8rem;
+  }
+  .txtaligmnt{
+    font-size: 2.25rem /* 36px */;
+    line-height: 1.375;
+  }
+  .bgService{
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media (min-width: 350px) and (max-width: 375px) {
+  .footeraligment {
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 3rem;
+  }
+  .txtaligmnt{
+    font-size: 2.8rem /* 36px */;
+    line-height: 1.375;
+  }
+  .bgService{
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media (min-width: 375px) and (max-width: 426px) {
+  .footeraligment {
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 3.5rem;
+  }
+  .txtaligmnt{
+    font-size: 2.8rem /* 36px */;
+    line-height: 1.375;
+  }
+  .bgService{
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
