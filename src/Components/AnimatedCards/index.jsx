@@ -1,7 +1,7 @@
 import React from 'react';
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
-import JS from '../../assets/js.svg';
+import JS from '../../assets/JS.svg';
 import net from '../../assets/net.svg';
 import ploy from '../../assets/ploy.svg';
 import react from '../../assets/react.svg';
