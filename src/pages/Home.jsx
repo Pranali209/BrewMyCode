@@ -99,9 +99,9 @@ function Home() {
                 <Services HandleClicked={HandleClicked} />
             </section>
 
-            <section id="whyus" className='mt-14 mb-52 flex justify-around items-center max-md:flex-col  px-24 '>
+            <section id="whyus" className='mt-14 max-md:mt-20 max-md:mb-44 mb-52 flex justify-around items-center max-md:flex-col  px-24 max-md:px-10 '>
 
-                <Heading className="text-center font-semibold text-[2.5rem] text-black " as="h1"
+                <Heading className="text-center font-semibold text-[2rem] text-black max-md:mb-20  " as="h1"
                     text="Why Brewmycode ?  " />
 
                 <CommentCards />
@@ -132,7 +132,7 @@ function Home() {
                     </div>
                 </div>
                 <div className="flex
-                 justify-around max-md:justify-between  mt-36 max-md:mt-14 flex-wrap mx-10 max-md:ml-4 max-md:px-2">
+                 justify-around max-md:justify-between  mt-36 max-md:mt-14 flex-wrap mx-10  max-md:px-2">
                     {ServiceData.map((service) => (
 
                         <ServiceBox {...service} />

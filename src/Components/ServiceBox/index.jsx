@@ -11,7 +11,7 @@ function ServiceBox({ id, icon, title, description, bgcolour, border }) {
     };
     return (
         <>
-            <div className="flex flex-col items-start w-[36%]  max-md:w-[45%] mb-16 max-md:mb-8 " >
+            <div className="flex flex-col items-start max-md:items-center w-[36%]  max-md:w-[45%] mb-16 max-md:mb-8  " >
 
                 <div className={` rounded-xl   flex  items-center  gap-4 max-md:gap-4 border-[1px] border-gray-500`}
                     style={{ backgroundColor: `${bgcolour}`, borderColor: `${border}` }}>

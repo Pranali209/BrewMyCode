@@ -114,13 +114,6 @@ body {
 
 
 
-@keyframes updownMovement{
-  0%{ transform: translateY(0);}
-  25%{ transform: translateY(200px);}
-  50%{ transform: translateY(0px);}
-  75%{ transform: translateY(-700px);}
-  100%{ transform: translateY(0px);}
-}
 
 .cards {
   position: relative;  
@@ -181,7 +174,16 @@ body {
 }
 
 
-
+.movingAnimationmobile{
+    animation: updownMovement 10s ease-in-out infinite
+  }
+  @keyframes updownMovement{
+    0%{ transform: translateY(0);}
+    25%{ transform: translateY(200px);}
+    50%{ transform: translateY(0px);}
+    75%{ transform: translateY(-700px);}
+    100%{ transform: translateY(0px);}
+  }
 
 
 
@@ -204,26 +206,25 @@ body {
     width: 86vw;
     
   }
-  .movingAnimationmobile{
-    animation: updownMovement 10s ease-in-out infinite
-  }
+  
+
   .cards {
-   
     max-width: fit-content;
-    width: auto;
-    height: auto;
-    
+    width:60vw;
+    height: auto;   
   }
   .card {
- 
-   
-    padding: 5px;
-    
+    padding:20px;
+  }
+  .cardBgImage{
+    top :-12vh;
+     left:-11vw
   }
   
 }
 
-@media (min-width: 350px) and (max-width: 375px) {
+
+@media (min-width: 350px) and (max-width: 376px) {
   .footeraligment {
     left: 50%;
     transform: translateX(-50%);
@@ -233,10 +234,23 @@ body {
     font-size: 2.8rem /* 36px */;
     line-height: 1.375;
   }
-  .bg-image { width: 100%; height: auto; }
+  
+  .cards {
+    max-width: fit-content;
+    width: 60vw;
+    height: auto;   
+  }
+  .card {
+    padding:20px;
+  }
+  .cardBgImage{
+    top :-15vh;
+     left:-11vw
+  }
+  
 }
 
-@media (min-width: 375px) and (max-width: 426px) {
+@media (min-width: 376px) and (max-width: 426px) {
   .footeraligment {
     left: 50%;
     transform: translateX(-50%);
@@ -249,5 +263,13 @@ body {
   .bgService{
     left: 50%;
     transform: translateX(-50%);
+  }
+  .cards {
+    max-width: fit-content;
+    width: 50vw;
+    height: auto;   
+  }
+  .card {
+    padding:40px;
   }
 }
