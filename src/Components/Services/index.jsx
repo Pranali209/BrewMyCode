@@ -48,9 +48,9 @@ function Services( {isClicked , HandleClicked}) {
                         <div className='flex justify-around items-center my-20 max-md:my-10 max-md:flex-col ' key={data.id}>
                             <div className='  relative    h-64 w-72 max-md:mb-24 '>
                                 <img src={data.NumberImg} alt="" className=' animate-upDown' />
-                                <div className=' bg-white  absolute  w-full flex flex-col '
+                                <div className=' bg-white  absolute  w-full flex flex-col max-md:px-5 '
                                 style={data.id === 0 ? { marginTop: '-90px' } : { marginTop : '-67px'}}>
-                                    <Heading className="text-xl text-left" as="h2"
+                                    <Heading className="text-xl text-left " as="h2"
                                         text={data.title}
                                     />
                                     <div className=' flex justify-end'>

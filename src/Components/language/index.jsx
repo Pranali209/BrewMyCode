@@ -2,7 +2,7 @@ import React from 'react';
 
 const LanguagePicker = ({showlangPicker , setLangPicker}) => {
   return (
-    <div className="bg-white  shadow-lg rounded-lg p-4 w-64 absolute top-1 right-1">
+    <div className="bg-white  shadow-lg rounded-lg p-4 w-64 absolute top-1 right-1 max-md:z-50 max-md:w-48">
       <div className="flex justify-between items-center mb-2">
         <p className="font-medium">Languages</p>
         <span className="material-symbols-outlined cursor-pointer"

@@ -30,7 +30,10 @@ const items = [
   <img src={bc} onDragStart={handleDragStart} role="presentation" className="w-32 h-36" />,
 ];
 
-const MyCarousel = () => <AliceCarousel  autoPlay infinite
+const MyCarousel = () =>
+  <div className="mt-[5.5rem] ">
+  <AliceCarousel  autoPlay infinite 
+
 autoPlayStrategy='none' autoPlayInterval={1000}
 disableDotsControls disableButtonsControls
 responsive={{
@@ -46,5 +49,7 @@ responsive={{
 
 }}
  
-items={items} />;
+items={items} />
+  </div>
+ 
 export default MyCarousel;

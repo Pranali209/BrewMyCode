@@ -16,13 +16,14 @@ import Testimonials from '../Components/Testimonial';
 import Footer from '../Components/Footer';
 import FooterAnimation from '../Components/FooterAnimation';
 import { useNavigate } from 'react-router';
+import CommentCards from '../Components/Cards';
 
 function Home() {
-    
+
     const navigate = useNavigate()
     function HandleClicked(serviceId) {
         navigate(`/service/${serviceId}`)
-        
+
     }
 
     function handleBookCall(params) {
@@ -34,32 +35,32 @@ function Home() {
             icon: Service1,
             title: "Who we are",
             description: "At Brewmycode, we're a small, passionate team turning visions into reality. We love what we do, crafting unique solutions for every founder. No one-size-fits-all—just tailored tech for your ideas.",
-            bgcolour : "#D3F7FF",
-            border : "#30DAFF"
+            bgcolour: "#D3F7FF",
+            border: "#30DAFF"
         },
         {
             id: 2,
             icon: Service2,
             title: "What makes us Different",
             description: "We blend creativity with practicality. No buzzwords, just clear solutions. We thrive on making your dreams real, treating your ideas like our own.",
-            bgcolour : "#E4FFEA",
-              border : "#15F847"
+            bgcolour: "#E4FFEA",
+            border: "#15F847"
         },
         {
             id: 3,
             icon: Service3,
             title: "Our Promise",
             description: "We are your tech partner, not just a service provider. We care about your goals and take pride in every line of code. Your success drives us",
-            bgcolour : "#FFE3F0",
-            border : "#FF3696"
+            bgcolour: "#FFE3F0",
+            border: "#FF3696"
         },
         {
             id: 4,
             icon: Service4,
             title: "Why Trust Us",
             description: "Direct Communication: Talk to real developers. Tailored Solutions: We listen first, then build. Passion for Startups: Your dreams fuel our passion.",
-            bgcolour : "#FFFDD3",
-              border : "#FFF628"
+            bgcolour: "#FFFDD3",
+            border: "#FFF628"
         }
     ]
 
@@ -68,8 +69,8 @@ function Home() {
             <section id="Navbar">
                 <div>
 
-                    <Header/>
-                   
+                    <Header />
+
                 </div>
             </section>
             <section id="Hero" className='mt-20 w-[50%] mx-auto relative  max-md:px-5 max-md:w-full max-md:mt-10'>
@@ -77,12 +78,12 @@ function Home() {
                     text=" Turning Ideas Into  Digital Solutions" />
                 <AnimatedBlock />
             </section>
-            <div className='mt-10 w-[50%] max-md:w-full mx-auto flex flex-col items-center  max-md:px-5'>
+            <div className=' my-20 w-[50%] max-md:w-full mx-auto flex flex-col items-center  max-md:px-5 max-md:my-20'>
                 <Heading className="text-black mx-auto text-center" as="p"
                     text="Brewmycode is a development agency passionate about transforming ideas into powerful digital solutions—web,  blockchain, AI, game development, and more." />
-                <Button className=' bg-black mt-10 text-white px-4 p-2 mx-auto'  onClick={handleBookCall} txt="Let's Talk" />
+                <Button className=' bg-black mt-10 text-white px-4 p-2 mx-auto' onClick={handleBookCall} txt="Let's Talk" />
             </div>
-            <section id="watweOffer" className=' mt-16  max-md:px-5'>
+            <section id="watweOffer" className='  my-20 max-md:px-5 max-md:my-20'>
                 <Heading className="text-center  font-semibold text-[2.5rem] max-md:text-[2rem] " as="h1"
                     text="What we Offer" />
 
@@ -92,12 +93,21 @@ function Home() {
 
             </section>
 
-            <section id="Services" className=' my-20  max-md:px-5'>
+            <section id="Services" className=' my-20   max-md:px-5'>
                 <Heading className="text-center  font-semibold  text-[2.5rem]  max-md:text-[2rem] " as="h1"
                     text="Our Services" />
-                <Services  HandleClicked = {HandleClicked} />
+                <Services HandleClicked={HandleClicked} />
             </section>
-            <section id="WhyUs" className='my-20'>
+
+            <section id="whyus" className='mt-14 mb-52 flex justify-around items-center max-md:flex-col  px-24 '>
+
+                <Heading className="text-center font-semibold text-[2.5rem] text-black " as="h1"
+                    text="Why Brewmycode ?  " />
+
+                <CommentCards />
+            </section>
+
+            <section id="Technology" className='my-20'>
                 <div className=' bg-black w-full p-2 mb-12' >
                     <Heading className="text-center font-semibold  text-[2rem] text-white " as="h1"
                         text="Technology we support" />
@@ -105,7 +115,7 @@ function Home() {
                 <MyCarousel />
             </section>
 
-            <section id="KnowusMore" className='my-24 '>
+            <section id="KnowusMore" className='my-20 '>
                 <div className=' bg-black w-full p-2 mb-12 ' >
                     <Heading className="text-center  font-semibold  text-[2rem] text-white " as="h1"
                         text="Know more about BrewmyCode " />
@@ -122,7 +132,7 @@ function Home() {
                     </div>
                 </div>
                 <div className="flex
-                 max-md:flex-col justify-around  mt-36 max-md:mt-14 flex-wrap mx-10 max-md:ml-4 max-md:px-2">
+                 justify-around max-md:justify-between  mt-36 max-md:mt-14 flex-wrap mx-10 max-md:ml-4 max-md:px-2">
                     {ServiceData.map((service) => (
 
                         <ServiceBox {...service} />
@@ -130,7 +140,7 @@ function Home() {
                 </div>
             </section>
 
-            <section id="Work">
+            <section id="Work" className='my-20'>
                 <div className=' bg-black w-full p-2 mb-12' >
                     <Heading className="text-center font-semibold text-[2.5rem] text-white " as="h1"
                         text="Our Work" />
@@ -140,7 +150,8 @@ function Home() {
 
                 <WorkBox />
             </section>
-            <section id="clients" className='py-20'>
+
+            <section id="clients" className='py-10'>
                 <Heading className="text-center font-semibold text-[2.5rem] text-black " as="h1"
                     text="Words From our Clients " />
                 <Heading className="text-center  text-lg leading-relaxed px-48 py-10 max-md:px-2 max-md:py-10 text-black " as="p"
@@ -156,15 +167,15 @@ function Home() {
                     text="We craft custom plans to fit your website’s specific needs. Contact Us " />
                 <Button className=' bg-black mt-5 text-white text-lg px-8 py-3 p-2 mx-auto hover:scale-75
                 shadow-md transition-all' txt="Book a Call"
-                onClick={handleBookCall} />
+                    onClick={handleBookCall} />
             </section>
 
-             
-            <section>
-                <Footer/>
-                <FooterAnimation/>
+
+            <section id='footer'>
+                <Footer handleBookCall={handleBookCall} />
+                <FooterAnimation />
             </section>
-           
+
         </div>
     )
 }

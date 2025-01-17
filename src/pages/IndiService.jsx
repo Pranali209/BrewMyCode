@@ -30,7 +30,7 @@ const servicesData = [
         mainpara: "Your business needs a mobile app that works—fast, reliable, and easy for your users. At Brewmycode, we make apps that reach your users wherever they are, providing simple experiences that fit your goals.",
         subHeading: 'Custom Mobile Apps That Drive Success We build apps that help your business grow.',
         subpara: "",
-        bgImage:BgGame ,
+        bgImage: BgGame ,
         subhead1: "Custom App Development",
         subpara1: "Whether you need an MVP or a full app, we develop what you need. No shortcuts, just the features your users want.",
         subhead2: "Cross-Platform Solutions",
@@ -64,7 +64,7 @@ const servicesData = [
         mainpara: "Robust, secure, and scalable blockchain solutions tailored to your business goals. At Brewmycode, we help you unlock the potential of blockchain technology.",
         subHeading: 'Blockchain Solutions That Drive Innovation',
         subpara: "Create blockchain applications that deliver security, transparency, and efficiency.",
-        bgImage:  BgWeb,
+        bgImage:  BgChain,
         subhead1: "Custom Blockchain Development",
         subpara1: "Design and build blockchain solutions tailored to your specific business needs, whether it's a decentralized app, a private blockchain, or a custom solution.",
         subhead2: "Smart Contract Development",
@@ -84,12 +84,13 @@ function IndiService() {
      console.log(serviceData);
      
     return (
-        <>
-            <div className='-z-50 relative flex flex-col items-center bgimage   '>
-                <img src={BgWeb} alt="" className=' object-cover' />
-            </div>
-            <div className=' absolute max-md:px-5  px-10 py-2   w-[75%] max-md:w-[90%] top-[8vh] left-[12.5vw] 
-              bg-white z-30  opacity-[0.9]  shadow-md Elemt bgService ' >
+        <div className='flex justify-center items-center relative '>
+            <div className='-z-50 movingAnimation max-md:movingAnimationmobile  animate-upDown absolute flex flex-col items-center max-md:justify-center bgService  '>
+                <img src={serviceData.bgImage} alt="" className=' object-cover max-md:w-full max-md:h-auto' />
+                </div>
+            <div className=' border-2 border-black    max-md:px-5  px-10 py-2 my-10  
+             w-[75%] max-md:w-[90%] top-[8vh] left-[12.5vw] 
+              bg-white z-30  opacity-[0.9]  shadow-md Elemt  ' >
 
 
                 <Heading className="text-center font-semibold text-[2rem] text-black " as="h1"
@@ -145,9 +146,20 @@ function IndiService() {
                     </div>
                 </div>
             </div>
-        </>
+          
+        </div>
 
+      
+    
+           
+       
+ 
 
+            
+          
+        
+        
+        
 
 
 

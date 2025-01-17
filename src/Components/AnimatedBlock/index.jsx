@@ -19,7 +19,7 @@ const AnimatedBlock = () => {
             <div className="absolute bottom-[-3.5vh] right-[-2.5vw]">
                 <div className={` p-2 rounded-full shadow-lg animate-upDown inner-shadow4 px-4 max-md:px-2 max-md:text-sm max-md:p-1`} >BLOCKCHAIN</div>
             </div>
-            <div className="absolute bottom-[10.2vh] right-[18vw]">
+            <div className="absolute bottom-[12.2vh] right-[10vw]">
                 <div className={` p-2 rounded-full shadow-lg  animate-circular inner-shadow3 px-4 max-md:px-2 max-md:text-sm max-md:p-1 `}>AI</div>
             </div>
          

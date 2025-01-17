@@ -1,6 +1,6 @@
 import React from 'react'
 import Wave from 'react-wavify'
-import Icons from '../../assets/icon1.gif'
+import footergif from '../../assets/footergif.gif'
 import Heading from '../Heading'
 function FooterAnimation() {
   return (
@@ -25,9 +25,9 @@ function FooterAnimation() {
                 <section className="relative text-center text-white max-md:mb-4">
                     <span >Made with</span>
                     <span className="relative inline-block overflow-hidden max-w-full">
-                        <img src={Icons} className='w-[2rem] h-[1.9rem] mb-[-7px]'/>
+                        <img src={footergif} className='w-[2.5rem] h-[2.5rem] mb-[-7px]'/>
                     </span>
-                    <span>in Helsinki</span>
+                    <span>in Brewmycode</span>
                 </section>
 
                 <section className='flex max-md:text-center max-md:flex-col '>

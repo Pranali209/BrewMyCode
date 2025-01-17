@@ -2,7 +2,7 @@ import React from 'react';
 import Heading from '../Heading';
 import Button from '../Button';
 
-export default function Footer() {
+export default function Footer({handleBookCall}) {
   return (
     <footer className="container mx-auto p-8 px-14 py-16 max-md:px-8 bg-black text-white">
         <Heading  className="text-5xl font-semibold mb-4 text-white" as =" h1" text = "Stay ahead in the digital world!" />
@@ -20,7 +20,8 @@ export default function Footer() {
           placeholder="Your e-mail..."
         />
       
-          <button className=' bg-[#D2F2FF]  text-black px-3 py-1 max-md:px-1  max-md:text-sm  rounded-full' >Get in Touch</button>
+          <button className=' bg-[#D2F2FF]  text-black px-3 py-1 max-md:px-1  max-md:text-sm  rounded-full'
+          onClick={handleBookCall} >Get in Touch</button>
       </div>
 
     </footer>
