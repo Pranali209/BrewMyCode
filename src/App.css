@@ -202,8 +202,8 @@ body {
   .bgService{
     top: 50%;
     transform: translateY(-50%);
-    height: 62vh;
-    width: 86vw;
+    height: 52vh;
+    width: 80vw;
     
   }
   
@@ -247,7 +247,13 @@ body {
     top :-15vh;
      left:-11vw
   }
-  
+  .bgService{
+    top: 50%;
+    transform: translateY(-50%);
+    height: 52vh;
+    width: 80vw;
+    
+  }
 }
 
 @media (min-width: 376px) and (max-width: 426px) {
@@ -261,8 +267,11 @@ body {
     line-height: 1.375;
   }
   .bgService{
-    left: 50%;
-    transform: translateX(-50%);
+    top: 50%;
+    transform: translateY(-50%);
+    height: 52vh;
+    width: 80vw;
+    
   }
   .cards {
     max-width: fit-content;
