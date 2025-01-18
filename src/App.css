@@ -244,8 +244,9 @@ body {
     padding:20px;
   }
   .cardBgImage{
-    top :-15vh;
-     left:-11vw
+     top :-10vh;
+     left: 45%;
+    transform: translateX(-45%);
   }
   .bgService{
     top: 50%;

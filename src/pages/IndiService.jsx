@@ -98,7 +98,7 @@ function IndiService() {
                    
                 <div className='flex max-md:flex-col justify-between'>
                     <div className=' w-[50%] max-md:w-full flex flex-col items-start my-5 '>
-                        <Heading className="text-center font-semibold text-[2rem] text-black " as="h1"
+                        <Heading className="text-center font-semibold text-[2rem] max-md:text-[1.5rem] max-md:mx-auto text-black " as="h1"
                             text={serviceData.mainHeading}/>
                         <p className='text-[0.9rem] mt-2 max-md:text-center'>{serviceData.mainpara}</p>
                     </div>
