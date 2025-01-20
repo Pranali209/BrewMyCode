@@ -1,4 +1,4 @@
-import { changeLanguage } from 'i18next'
+
 import React from 'react'
 import { useTranslation } from 'react-i18next'
 
@@ -13,7 +13,6 @@ function LangDetector({showlangPicker , setLangPicker}) {
 
     function changeLanguage(lang) {
         console.log(lang);
-
         i18n.changeLanguage(lang)
     }
     return (
@@ -28,7 +27,7 @@ function LangDetector({showlangPicker , setLangPicker}) {
           
                 {languges.map((lang) => (
                     <div className="p-2 hover:bg-gray-100 cursor-pointer border border-gray-300 mt-4 rounded-md">
-                    <p className=' inline-block  rounded-md ' onClick={changeLanguage}>{lang.Lang}</p>
+                    <p className=' inline-block  rounded-md ' onClick={()=>changeLanguage(lang.Lang)}>{lang.Lang}</p>
                   </div>
                 ))}
            

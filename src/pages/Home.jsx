@@ -17,9 +17,9 @@ import Footer from '../Components/Footer';
 import FooterAnimation from '../Components/FooterAnimation';
 import { useNavigate } from 'react-router';
 import CommentCards from '../Components/Cards';
-
+import { useTranslation } from 'react-i18next'
 function Home() {
-
+    const {t} =  useTranslation()
     const navigate = useNavigate()
     function HandleClicked(serviceId) {
         navigate(`/service/${serviceId}`)
@@ -75,27 +75,27 @@ function Home() {
             </section>
             <section id="Hero" className='mt-20 w-[50%] mx-auto relative  max-md:px-5 max-md:w-full max-md:mt-10'>
                 <Heading className="text-7xl text-center font-semibold leading-snug txtaligmnt " as="h1"
-                    text=" Turning Ideas Into  Digital Solutions" />
+                    text={t('mainHeading')} />
                 <AnimatedBlock />
             </section>
             <div className=' my-32 w-[50%] max-md:w-full mx-auto flex flex-col items-center  max-md:px-5 max-md:my-20'>
                 <Heading className="text-black mx-auto text-center max-md:text-sm" as="p"
-                    text="Brewmycode is a development agency passionate about transforming ideas into powerful digital solutions—web,  blockchain, AI, game development, and more." />
-                <Button className=' bg-black mt-10 text-white px-4 p-2 mx-auto' onClick={handleBookCall} txt="Let's Talk" />
+                    text={t('mainPara')} />
+                <Button className=' bg-black mt-10 text-white px-4 p-2 mx-auto' onClick={handleBookCall} txt={t('BtnTxtletsTalk')} />
             </div>
             <section id="watweOffer" className='  my-20 max-md:px-5 max-md:my-20'>
                 <Heading className="text-center  font-semibold text-[2.5rem] max-md:text-[2rem] " as="h1"
-                    text="What we Offer" />
+                    text={t('OfferHeading')} />
 
                 <Heading className="text-black max-md:text-sm mx-auto mt-5 text-center w-[60%] max-md:w-full leading-relaxed" as="p"
-                    text="Tech that Solves Real Problems We provide solutions- web, e-commerce, Blockchain, AI, game development, and more. Your ideas transformed into digital experiences—fast and effective." />
+                    text={t('offerPara')} />
 
 
             </section>
 
             <section id="Services" className=' my-20   max-md:px-5'>
                 <Heading className="text-center  font-semibold  text-[2.5rem]  max-md:text-[2rem] " as="h1"
-                    text="Our Services" />
+                    text={t('ServiceHeading')} />
                 <Services HandleClicked={HandleClicked} />
             </section>
 
