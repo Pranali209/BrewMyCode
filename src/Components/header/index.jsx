@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import Button from '../Button';
-
+import { useTranslation } from 'react-i18next'
 import LanguagePicker from '../language';
+import LangDetector from '../LangaugeDetector';
 
 
 function Header() {
@@ -29,7 +30,7 @@ function HandleLanguagePicker(params)
         <a href="#" className="text-black hover:text-gray-700 font-semibold relative max-md:text-sm max-md:font-medium "
         onClick={HandleLanguagePicker}>Language</a>
         {
-          showlangPicker && (  <LanguagePicker showlangPicker = {showlangPicker}  setLangPicker = {HandleLanguagePicker}/>)
+          showlangPicker && (  <LangDetector showlangPicker = {showlangPicker}  setLangPicker = {HandleLanguagePicker}/>)
         }
       
       </div>

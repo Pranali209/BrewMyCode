@@ -18,10 +18,7 @@ const LanguagePicker = ({showlangPicker , setLangPicker}) => {
           <span className="material-symbols-outlined float-right">-</span>
         </div>
       </div>
-      <button className="mt-2 text-gray-300 hover:underline ">+ Add language</button>
-      <p className="mt-4 text-gray-300 text-sm">
-        Before copying this widget to a new page, select the displayed language of that page to assign it properly.
-      </p>
+     
     </div>
   );
 };
