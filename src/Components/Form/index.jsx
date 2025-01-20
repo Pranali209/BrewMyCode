@@ -60,7 +60,8 @@ function FormComp() {
             <div className="bg-white shadow-lg rounded-lg p-4 ">
 
               <Calendar onChange={handleDateChange} value={selectedDate}
-                className="!w-[643px] max-md:!container max-sm:!container  !border-none " />
+                className={`!w-[643px] max-md:!container max-sm:!container  !border-none 
+                 `} />
 
 
             </div>
@@ -69,7 +70,7 @@ function FormComp() {
               {times.map((time) => (
                 <button
                   key={time}
-                  className={`bg-[#f4f4f5] hover:bg-[#e4e4e7] max-md:px-2  max-md:mb-5 text-black px-4 py-2 rounded-md ${selectedTime === time ? 'bg-[#2562eb] text-white' : ''}`}
+                  className={`bg-[#f4f4f5] hover:bg-black max-md:px-2  max-md:mb-5 text-black px-4 py-2 rounded-md ${selectedTime === time ? 'bg-black text-white' : ''}`}
                   onClick={() => handleTimeChange(time)}
                 >
                   {time}
@@ -87,25 +88,8 @@ function FormComp() {
         </div>
       </section>
       <div className='w-[40%] max-md:mt-16 max-md:w-full'>
-        <div className="flex justify-around items-center mb-4 ">
-          <div className="mb-4 flex flex-col items-center">
-            <img src="https://placehold.co/100x100" alt="Krishna" className="rounded-full w-20 h-20 shadow-lg" />
-            <p className="text-gray-600 mt-5">{username}</p>
-          </div>
-          <div>
-            <h3 className="text-xl font-bold">Onboarding Call</h3>
-            <div className="flex items-center mt-7">
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-[#2562eb]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-              <span className="ml-2">Duration</span>
-            </div>
-            <p className="text-black text-sm ml-5 mt-5">30-40 mins</p>
-          </div>
-
-        </div>
-        <hr className=' mt-12 border-[1.4px] border-gray-400' />
-        <div className="bg-white  p-4 my-12">
+    
+        <div className="bg-white  p-4 ">
 
           <form onSubmit={(e) => handleFormSubmit(e)} >
             <div className="mb-4">

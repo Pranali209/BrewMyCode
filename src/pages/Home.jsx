@@ -74,12 +74,12 @@ function Home() {
                 </div>
             </section>
             <section id="Hero" className='mt-20 w-[50%] mx-auto relative  max-md:px-5 max-md:w-full max-md:mt-10'>
-                <Heading className="text-7xl text-center font-semibold  leading-snug  txtaligmnt max-md:leading-relaxed" as="h1"
+                <Heading className="text-7xl text-center font-semibold leading-snug txtaligmnt " as="h1"
                     text=" Turning Ideas Into  Digital Solutions" />
                 <AnimatedBlock />
             </section>
-            <div className=' my-20 w-[50%] max-md:w-full mx-auto flex flex-col items-center  max-md:px-5 max-md:my-20'>
-                <Heading className="text-black mx-auto text-center" as="p"
+            <div className=' my-32 w-[50%] max-md:w-full mx-auto flex flex-col items-center  max-md:px-5 max-md:my-20'>
+                <Heading className="text-black mx-auto text-center max-md:text-sm" as="p"
                     text="Brewmycode is a development agency passionate about transforming ideas into powerful digital solutions—web,  blockchain, AI, game development, and more." />
                 <Button className=' bg-black mt-10 text-white px-4 p-2 mx-auto' onClick={handleBookCall} txt="Let's Talk" />
             </div>
@@ -87,7 +87,7 @@ function Home() {
                 <Heading className="text-center  font-semibold text-[2.5rem] max-md:text-[2rem] " as="h1"
                     text="What we Offer" />
 
-                <Heading className="text-black mx-auto mt-5 text-center w-[60%] max-md:w-full leading-relaxed" as="p"
+                <Heading className="text-black max-md:text-sm mx-auto mt-5 text-center w-[60%] max-md:w-full leading-relaxed" as="p"
                     text="Tech that Solves Real Problems We provide solutions- web, e-commerce, Blockchain, AI, game development, and more. Your ideas transformed into digital experiences—fast and effective." />
 
 
@@ -145,7 +145,7 @@ function Home() {
                     <Heading className="text-center font-semibold text-[2.5rem] text-white " as="h1"
                         text="Our Work" />
                 </div>
-                <Heading className="text-center text-lg leading-relaxed px-48  py-20  max-md:px-5 max-md:py-10 " as="p"
+                <Heading className="text-center max-md:text-sm text-lg leading-relaxed px-48  py-20  max-md:px-5 max-md:py-10 " as="p"
                     text="We’ve worked on a lot of projects—e-commerce, blockchain, games, and more. Here, we showcase our best. Each project is a journey we take together, tackling challenges and celebrating wins as friends." />
 
                 <WorkBox />
@@ -154,7 +154,7 @@ function Home() {
             <section id="clients" className='py-10'>
                 <Heading className="text-center font-semibold text-[2.5rem] text-black " as="h1"
                     text="Words From our Clients " />
-                <Heading className="text-center  text-lg leading-relaxed px-48 py-10 max-md:px-2 max-md:py-10 text-black " as="p"
+                <Heading className="text-center max-md:text-sm text-lg leading-relaxed px-48 py-10 max-md:px-2 max-md:py-10 text-black " as="p"
                     text="Here’s what some of our clients have to say about working with us: " />
                 <Testimonials />
             </section>
@@ -163,7 +163,7 @@ function Home() {
 
                 <Heading className="text-center font-semibold text-[2.5rem] text-black " as="h1"
                     text="Need Something More ? " />
-                <Heading className="text-center  text-lg leading-relaxed px-48 max-md:px-2 max-md:py-10  py-10 text-black " as="p"
+                <Heading className="text-center max-md:text-sm text-lg leading-relaxed px-48 max-md:px-2 max-md:py-10  py-10 text-black " as="p"
                     text="We craft custom plans to fit your website’s specific needs. Contact Us " />
                 <Button className=' bg-black mt-5 text-white text-lg px-8 py-3 p-2 mx-auto hover:scale-75
                 shadow-md transition-all' txt="Book a Call"

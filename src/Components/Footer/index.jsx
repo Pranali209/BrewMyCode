@@ -4,7 +4,7 @@ import Button from '../Button';
 
 export default function Footer({handleBookCall}) {
   return (
-    <footer className="container mx-auto p-8 px-14 py-16 max-md:px-8 bg-black text-white">
+    <footer className="container mx-auto p-8 px-14 py-28 max-md:px-8 bg-black text-white ">
         <Heading  className="text-5xl font-semibold mb-4 text-white" as =" h1" text = "Stay ahead in the digital world!" />
   
       <p className="text-lg mb-6 mt-5 text-slate-100">Receive exclusive tips, trends, and updates on:</p>
@@ -23,7 +23,7 @@ export default function Footer({handleBookCall}) {
           <button className=' bg-[#D2F2FF]  text-black px-3 py-1 max-md:px-1  max-md:text-sm  rounded-full'
           onClick={handleBookCall} >Get in Touch</button>
       </div>
-
+     <div className='h-20'></div>
     </footer>
   );
 }

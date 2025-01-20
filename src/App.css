@@ -1,7 +1,11 @@
 @import "react-alice-carousel/lib/alice-carousel.css";
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 body {
   font-family: 'Poppins';
+}
+.p{
+  font-family: "Inter", serif;
 }
 
 .Elemt {
@@ -87,7 +91,7 @@ body {
 .inner-shadow4 { box-shadow: inset -11.16px -6.49px 26.72px 0px rgba(65, 255, 106, 0.52); 
 }
 
-  
+.react-calendar__tile--active { background-color: black !important; color: white !important; /* Change text color to white for contrast */ }
   
 @media (max-width: 768px) {
   .slider-container {
@@ -130,7 +134,7 @@ body {
   top: 0;
   left: 0;
   z-index: 2;
-  background: #ccc;
+  background: white;
   border-radius: 30px;
   padding: 50px;
   transform: translateY(0) rotate(4deg) translateX(25px) scale(1);
@@ -153,7 +157,7 @@ body {
   animation: card-out 0.6s cubic-bezier(.8,.2,.1,0.8);
   transform: translateY(-50px) rotate(8deg) translateX(55px) scale(0.95);
   z-index: 1;
-  background: #bbb;
+  background: white;
 }
 
 @keyframes card-out {
@@ -169,7 +173,7 @@ body {
   position: relative;
   z-index: 10;
   opacity: 1;
-  background: #EEE;
+  background: white;
   transform: rotate(-1deg) translateX(0%) scale(1);
 }
 
@@ -197,7 +201,7 @@ body {
   }
   .txtaligmnt{
     font-size: 2.25rem /* 36px */;
-    line-height: 1.375;
+    line-height:1.2;
   }
   .bgService{
     top: 50%;
@@ -206,8 +210,6 @@ body {
     width: 80vw;
     
   }
-  
-
   .cards {
     max-width: fit-content;
     width:60vw;
@@ -219,6 +221,11 @@ body {
   .cardBgImage{
     top :-12vh;
      left:-11vw
+  }
+  .bubblesize {
+    width:30vw;
+ 
+
   }
   
 }
@@ -232,7 +239,7 @@ body {
   }
   .txtaligmnt{
     font-size: 2.8rem /* 36px */;
-    line-height: 1.375;
+    line-height:1.2;
   }
   
   .cards {
@@ -255,6 +262,11 @@ body {
     width: 80vw;
     
   }
+  .bubblesize {
+    width:30vw;
+
+
+  }
 }
 
 @media (min-width: 376px) and (max-width: 426px) {
@@ -265,7 +277,7 @@ body {
   }
   .txtaligmnt{
     font-size: 2.8rem /* 36px */;
-    line-height: 1.375;
+    line-height:1.2;
   }
   .bgService{
     top: 50%;
@@ -281,5 +293,9 @@ body {
   }
   .card {
     padding:40px;
+  }
+  .bubblesize {
+    width:30vw;
+
   }
 }

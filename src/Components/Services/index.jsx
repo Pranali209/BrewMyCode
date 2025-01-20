@@ -60,7 +60,7 @@ function Services( {isClicked , HandleClicked}) {
                                 </div>
                             </div>
                             <div className=' w-[55%] max-md:w-full '>
-                                <Heading className= " text-lg leading-relaxed" as="p"
+                                <Heading className= " text-lg leading-relaxed max-md:text-sm max-md:leading-snug" as="p"
                                 text = {data.des}/> 
                                 <Button className=' bg-black mt-10 text-white px-4 p-2 mx-auto'
                                  txt="Learn More ->" 
