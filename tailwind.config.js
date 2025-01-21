@@ -20,8 +20,8 @@ export default {
         },
         mobileCirclur:{
           '0%' : { transform: 'translate(0, 0) '},
-         ' 25%' : { transform:' translate(100px, -400px) '},
-         ' 50%' : { transform:' translate(50px, 0)'},
+         ' 25%' : { transform:' translate(50px, -450px) '},
+         ' 50%' : { transform:' translate(50px, -100px)'},
           '75% ' :{ transform: 'translate(100px, 100px)' },
           '100%' : { transform:' translate(0, 0)' },
         },

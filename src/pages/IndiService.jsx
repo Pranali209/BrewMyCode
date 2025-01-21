@@ -85,7 +85,7 @@ function IndiService() {
     return (
         <div className='flex justify-center items-center relative '>
             <div className='-z-50 movingAnimation  absolute flex flex-col items-center max-md:justify-center bgService  '>
-                <img src={serviceData.bgImage} alt="" className=' object-cover max-md:w-full max-md:h-full max-md:animate-mobileCirclur' />
+                <img src={serviceData.bgImage} alt="" className=' object-cover max-md:animate-mobileCirclur' />
                 </div>
             <div className=' border-2 border-black    max-md:px-5  px-10 py-2 my-10  
              w-[75%] max-md:w-[90%] top-[8vh] left-[12.5vw] 
