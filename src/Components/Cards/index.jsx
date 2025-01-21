@@ -27,12 +27,12 @@ const CommentCards = () => {
         <div className='-z-10 absolute top-[-10vh] left-[-5vw] max-md:left-[-20vw] max-md:top-[-9vh] h-[30vh]  w-[32vw]  max-md:w-[90vw] cardBgImage '>
             <img src={cardBg} alt=""  className=' object-cover max-md:w-full max-md:h-auto'/>
           </div>
-           <ul className="cards  mb-10 ">
+           <ul className="cards  mb-10  ">
           
             {cards.map((card, index) => (
                 <li
                     key={index}
-                    className={`card ${index === currentCardIndex ? 'card--current' : 'card--out'} `}
+                    className={`card shadow-xl ${index === currentCardIndex ? 'card--current' : 'card--out'} `}
                 >
                     
                     <p className='text-center text-lg max-md:text-sm'>{card.content}</p>
