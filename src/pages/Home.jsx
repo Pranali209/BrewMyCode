@@ -76,11 +76,13 @@ function Home() {
                     <Header />
                 </div>
             </section>
+
             <section id="Hero" className='mt-20 w-[50%] mx-auto relative max-md:px-5 max-md:w-full max-md:mt-14'>
                 <Heading className="text-7xl text-center font-semibold leading-snug txtaligmnt" as="h1"
                     text={t('mainHeading')} />
                 <AnimatedBlock />
             </section>
+
             <div className='my-32 w-[50%] max-md:w-full mx-auto flex flex-col items-center max-md:px-5 max-md:my-20'>
                 <Heading className="text-black mx-auto text-center max-md:text-sm" as="p"
                     text={t('mainPara')} />
@@ -92,11 +94,13 @@ function Home() {
                 <Heading className="text-black max-md:text-sm mx-auto mt-5 text-center w-[60%] max-md:w-full leading-relaxed" as="p"
                     text={t('offerPara')} />
             </section>
+
             <section id="Services" className='my-20 max-md:px-5'>
                 <Heading className="text-center font-semibold text-[2.5rem] max-md:text-[2rem]" as="h1"
                     text={t('ServiceHeading')} />
                 <Services HandleClicked={HandleClicked} />
             </section>
+
             <section id="whyus" className='mt-14 max-md:mt-20 max-md:mb-44 mb-52 flex justify-around items-center max-md:flex-col px-24 max-md:px-10'>
                 <Heading className="text-center font-semibold text-[2rem] text-black max-md:mb-20" as="h1"
                     text={t('whybrewHeading')} />
@@ -110,6 +114,7 @@ function Home() {
                 </div>
                 <MyCarousel />
             </section>
+            
             <section id="KnowusMore" className='my-20'>
                 <div className='bg-black w-full p-2 mb-12'>
                     <Heading className="text-center font-semibold text-[2rem] text-white" as="h1"
