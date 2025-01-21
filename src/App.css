@@ -80,16 +80,16 @@ body {
 }
 .inner-shadow { box-shadow: inset -10.96px -6.39px 20px 0px rgba(48, 218, 255, 0.52); 
 }
-.inner-shadow1 { box-shadow:  inset  -4px -7.49px 20px rgba(255, 246, 40, 0.52); 
+.inner-shadow1 { box-shadow:  inset  -5.5px  -6.39px 20px rgba(255, 246, 40, 0.52); 
 }
 
-.inner-shadow2 { box-shadow: inset -11.16px -6.49px 20px 0px rgba(255, 101, 101, 0.52); 
+.inner-shadow2 { box-shadow: inset -10.96px -6.39px 20px 0px rgba(255, 101, 101, 0.52); 
 }
 
-.inner-shadow3 { box-shadow: inset -11.16px -6.49px 20px 0px rgba(255, 103, 177, 0.52); 
+.inner-shadow3 { box-shadow: inset -5.16px -6.49px 20px 0px rgba(255, 103, 177, 0.52); 
 }
 
-.inner-shadow4 { box-shadow: inset -11.16px -6.49px 20px 0px rgba(65, 255, 106, 0.52); 
+.inner-shadow4 { box-shadow: inset -10.16px -6.49px 20px 0px rgba(65, 255, 106, 0.52); 
 }
 
 .react-calendar__tile--active { background-color: black !important; color: white !important; /* Change text color to white for contrast */ }
@@ -192,8 +192,8 @@ body {
   .bgService{
     top: 50%;
     transform: translateY(-50%);
-    height: 52vh;
-    width: 80vw;
+    height: 10vh;
+    width: 20vw;
     
   }
   .cards {

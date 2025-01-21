@@ -12,8 +12,9 @@ function LangDetector({showlangPicker , setLangPicker}) {
     ]
 
     function changeLanguage(lang) {
-        console.log(lang.Lang);
+     
         i18n.changeLanguage(lang.code)
+        setLangPicker()
     }
     return (
         <div className="bg-white  shadow-lg rounded-lg p-4 w-64 absolute top-1 right-1 max-md:z-50 max-md:w-48">

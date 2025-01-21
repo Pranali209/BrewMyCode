@@ -83,7 +83,7 @@ function FormComp() {
                 </div>
             </div>
         </section>
-        <div className="w-[40%] max-md:mt-16 max-md:w-full">
+        <div className="w-[40%] max-md:mt-5 max-md:w-full">
             <div className="bg-white p-4">
                 <form onSubmit={(e) => handleFormSubmit(e)}>
                     <div className="mb-4">
