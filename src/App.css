@@ -47,9 +47,10 @@ body {
   }
 }
 
+
 .movingAnimation {
  
-  animation: moveImage  5s linear infinite;
+  animation: moveImage  7s linear infinite;
 }
 
 @keyframes moveImage {
@@ -79,7 +80,7 @@ body {
 }
 .inner-shadow { box-shadow: inset -10.96px -6.39px 26.3px 0px rgba(48, 218, 255, 0.52); 
 }
-.inner-shadow1 { box-shadow: inset -11.07px -6.49px 26.72px 0px rgba(243, 231, 16, 0.52); 
+.inner-shadow1 { box-shadow:  inset  -11px -6.49px 26.72px rgba(255, 246, 40 , 0.52); 
 }
 
 .inner-shadow2 { box-shadow: inset -11.16px -6.49px 26.72px 0px rgba(255, 67, 67, 0.52); 
@@ -176,21 +177,6 @@ body {
   background: white;
   transform: rotate(-1deg) translateX(0%) scale(1);
 }
-
-
-.movingAnimationmobile{
-    animation: updownMovement 10s ease-in-out infinite
-  }
-  @keyframes updownMovement{
-    0%{ transform: translateY(0);}
-    25%{ transform: translateY(200px);}
-    50%{ transform: translateY(0px);}
-    75%{ transform: translateY(-700px);}
-    100%{ transform: translateY(0px);}
-  }
-
-
-
 
 
 @media (min-width: 320px) and (max-width: 350px) {

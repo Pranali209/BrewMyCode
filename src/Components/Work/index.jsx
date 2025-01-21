@@ -3,38 +3,41 @@ import rct1 from '../../assets/rct1.svg'
 import rct2 from '../../assets/rct2.svg'
 import rct3 from '../../assets/rct3.svg'
 import rct4 from '../../assets/rct4.svg'
-const cards = [
-  {
-    title: 'Web Development',
-    image: rct1,
-    description: 'Blockchain And Crypto Made Simple.',
-    count: 'w-[450px] h-[470px] max-md:h-[246px] max-md:w-[237px] max-md:w-[237px]',
-    blackdiv: 'w-[450px] h-[460px] max-md:h-[243px] max-md:w-[240px]  mt-5 ml-5 ',
-  },
-  {
-    title: 'Game Development',
-    image: rct2,
-    description: 'Blockchain And Crypto Made Simple.',
-    count: 'w-[290px] h-[290px] max-md:h-[236px] max-md:w-[237px]',
-    blackdiv: 'w-[290px] h-[278px] max-md:h-[232px]  max-md:w-[245px] mt-5 ml-5',
-  },
-  {
-    title: 'Blockchain',
-    image: rct3,
-    description: 'Blockchain And Crypto Made Simple.',
-    count: 'w-[290px] h-[290px] max-md:h-[236px] max-md:w-[237px]',
-    blackdiv: 'w-[290px] h-[278px] max-md:h-[232px]  max-md:w-[245px] mt-5 ml-5'
-  },
-  {
-    title: 'Ecommerce Solution',
-    image: rct4,
-    description: 'Blockchain And Crypto Made Simple.',
-     count: 'w-[450px] h-[470px] max-md:h-[246px] max-md:w-[237px] max-md:w-[237px]',
-     blackdiv: 'w-[450px] h-[460px] max-md:h-[243px] max-md:w-[240px]  mt-5 ml-5',
-  }
-];
+import { useTranslation } from 'react-i18next';
 
 const WorkBox = () => {
+  const { t } = useTranslation()
+  const cards = [
+    {
+      title:  t('workcards.WebDevelopment.title'),
+      image: rct1,
+      description: t('workcards.WebDevelopment.description'),
+      count: 'w-[450px] h-[470px] max-md:h-[246px] max-md:w-[237px] max-md:w-[237px]',
+      blackdiv: 'w-[450px] h-[460px] max-md:h-[243px] max-md:w-[240px]  mt-5 ml-5 ',
+    },
+    {
+      title:  t('workcards.GameDevelopment.title'),
+      image: rct2,
+      description:  t('workcards.GameDevelopment.description'),
+      count: 'w-[290px] h-[290px] max-md:h-[236px] max-md:w-[237px]',
+      blackdiv: 'w-[290px] h-[278px] max-md:h-[232px]  max-md:w-[245px] mt-5 ml-5',
+    },
+    {
+      title:  t('workcards.Blockchain.title'),
+      image: rct3,
+      description:  t('workcards.Blockchain.description'),
+      count: 'w-[290px] h-[290px] max-md:h-[236px] max-md:w-[237px]',
+      blackdiv: 'w-[290px] h-[278px] max-md:h-[232px]  max-md:w-[245px] mt-5 ml-5'
+    },
+    {
+      title:  t('workcards.EcommerceSolution.title'),
+      image: rct4,
+      description:  t('workcards.EcommerceSolution.description'),
+       count: 'w-[450px] h-[470px] max-md:h-[246px] max-md:w-[237px] max-md:w-[237px]',
+       blackdiv: 'w-[450px] h-[460px] max-md:h-[243px] max-md:w-[240px]  mt-5 ml-5',
+    }
+  ];
+  
   return (
     <div className="container mx-auto px-40 max-md:px-10  ">
       <div className="grid grid-cols-1 max-md:grid-cols-1 lg:grid-cols-2">

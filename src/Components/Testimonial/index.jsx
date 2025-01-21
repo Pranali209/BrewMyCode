@@ -2,7 +2,9 @@ import React ,{ useEffect , useState} from 'react';
 import Man from '../../assets/Person.svg'
 import Female from '../../assets/Female.svg'
 import Kid from '../../assets/Kid.svg'
+import { useTranslation } from 'react-i18next';
 const Testimonials = () => {
+      const { t } = useTranslation();
     const [ currentIndex , setCurrentIndex] = useState(0)
     useEffect(() => {
       const interval = setInterval(() => {
@@ -13,19 +15,19 @@ const Testimonials = () => {
     const isMediumScreen = window.matchMedia('(max-width: 768px)').matches;
     const testimonials = [
         {
-            name: 'Client A',
+            name: t('testimonialCards.ClientA.name'),
             img : Man,
-            testimonial: 'Brewmycode Helped Us Turn Our Vision Into Reality. The Team Was Dedicated And Made The Process Smooth And Rewarding',
+            testimonial: t('testimonialCards.ClientA.testimonial'),
         },
         {
-            name: 'Client B',
+            name: t('testimonialCards.ClientB.name'),
             img : Female,
-            testimonial: 'We Went From An Idea To Over 1M Downloads, Thanks To The Incredible Support From Brewmycode.',
+            testimonial: t('testimonialCards.ClientB.testimonial'),
         },
         {
-            name: 'Client C',
+            name:t('testimonialCards.ClientC.name'),
             img : Kid,
-            testimonial: 'Their Approach Is Personal, And They Genuinely Care About Your Success. Highly Recommend',
+            testimonial:  t('testimonialCards.ClientC.testimonial'),
         },
     ];
 

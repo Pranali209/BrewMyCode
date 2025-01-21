@@ -18,6 +18,13 @@ export default {
           '75%': { transform: 'translate(10px, 10px)' },
           '100%': { transform: 'translate(0, 0)' },
         },
+        mobileCirclur:{
+          '0%' : { transform: 'translate(0, 0) '},
+         ' 25%' : { transform:' translate(100px, -400px) '},
+         ' 50%' : { transform:' translate(50px, 0)'},
+          '75% ' :{ transform: 'translate(100px, 100px)' },
+          '100%' : { transform:' translate(0, 0)' },
+        },
         fadeIn: { '0%': { opacity: 0 }, '100%': { opacity: 1 }, },
         fadeOut: { '0%': { opacity: 1 }, '100%': { opacity: 0 }, },
       }
@@ -26,6 +33,7 @@ export default {
         circular: 'circular 4s linear infinite',
         fadeIn: 'fadeIn 2s ease-in-out',
         fadeOut: 'fadeOut 2s ease-in-out',
+        mobileCirclur: 'mobileCirclur 18s linear infinite',
       },
 
 

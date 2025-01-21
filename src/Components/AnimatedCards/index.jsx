@@ -12,59 +12,62 @@ import WP from '../../assets/WP.svg';
 import flutter from '../../assets/flutter.svg';
 import Etherium from '../../assets/Etherium.svg';
 import bc from '../../assets/bc.svg';
-
-const handleDragStart = (e) => e.preventDefault();
-
-const items = [
-  <div className="flex flex-col items-center">
-    <img src={JS}  role="presentation" className="w-24 h-24" />
-    <span className="mt-2 text-center">JavaScript</span>
-  </div>,
-  <div className="flex flex-col items-center">
-    <img src={net}  role="presentation" className="w-24 h-24" />
-    <span className="mt-2 text-center">Network</span>
-  </div>,
-  <div className="flex flex-col items-center">
-    <img src={ploy}  role="presentation" className="w-24 h-24" />
-    <span className="mt-2 text-center">Ploy</span>
-  </div>,
-  <div className="flex flex-col items-center">
-    <img src={react}  role="presentation" className="w-24 h-24" />
-    <span className="mt-2 text-center">React</span>
-  </div>,
-  <div className="flex flex-col items-center">
-    <img src={Ruby}  role="presentation" className="w-24 h-24" />
-    <span className="mt-2 text-center">Ruby</span>
-  </div>,
-  <div className="flex flex-col items-center">
-    <img src={Shopy}  role="presentation" className="w-24 h-24" />
-    <span className="mt-2 text-center">Shopy</span>
-  </div>,
-  <div className="flex flex-col items-center">
-    <img src={TS}  role="presentation" className="w-24 h-24" />
-    <span className="mt-2 text-center">TypeScript</span>
-  </div>,
-  <div className="flex flex-col items-center">
-    <img src={WP}  role="presentation" className="w-24 h-24" />
-    <span className="mt-2 text-center">WordPress</span>
-  </div>,
-  <div className="flex flex-col items-center">
-    <img src={flutter}  role="presentation" className="w-24 h-24" />
-    <span className="mt-2 text-center">Flutter</span>
-  </div>,
-  <div className="flex flex-col items-center">
-    <img src={Etherium}  role="presentation" className="w-24 h-24" />
-    <span className="mt-2 text-center">Ethereum</span>
-  </div>,
-  <div className="flex flex-col items-center">
-    <img src={bc}  role="presentation" className="w-24 h-24" />
-    <span className="mt-2 text-center">Blockchain</span>
-  </div>,
-];
+import { useTranslation } from 'react-i18next';
 
 
-const MyCarousel = () =>
-  <div className="mt-[5.5rem] ">
+
+
+
+const MyCarousel = () => {
+  const { t } = useTranslation();
+  const items = [
+    <div className="flex flex-col items-center">
+      <img src={JS}  role="presentation" className="w-24 h-24" />
+      <span className="mt-2 text-center">{t('techdata.JS')}</span>
+    </div>,
+    <div className="flex flex-col items-center">
+      <img src={net}  role="presentation" className="w-24 h-24" />
+      <span className="mt-2 text-center">{t('techdata.net')}</span>
+    </div>,
+    <div className="flex flex-col items-center">
+      <img src={ploy}  role="presentation" className="w-24 h-24" />
+      <span className="mt-2 text-center">{t('techdata.ploy')}</span>
+    </div>,
+    <div className="flex flex-col items-center">
+      <img src={react}  role="presentation" className="w-24 h-24" />
+      <span className="mt-2 text-center">{t('techdata.react')}</span>
+    </div>,
+    <div className="flex flex-col items-center">
+      <img src={Ruby}  role="presentation" className="w-24 h-24" />
+      <span className="mt-2 text-center">{t('techdata.Ruby')}</span>
+    </div>,
+    <div className="flex flex-col items-center">
+      <img src={Shopy}  role="presentation" className="w-24 h-24" />
+      <span className="mt-2 text-center">{t('techdata.Shopy')}</span>
+    </div>,
+    <div className="flex flex-col items-center">
+      <img src={TS}  role="presentation" className="w-24 h-24" />
+      <span className="mt-2 text-center">{t('techdata.TS')}</span>
+    </div>,
+    <div className="flex flex-col items-center">
+      <img src={WP}  role="presentation" className="w-24 h-24" />
+      <span className="mt-2 text-center">{t('techdata.WP')}</span>
+    </div>,
+    <div className="flex flex-col items-center">
+      <img src={flutter}  role="presentation" className="w-24 h-24" />
+      <span className="mt-2 text-center">{t('techdata.flutter')}</span>
+    </div>,
+    <div className="flex flex-col items-center">
+      <img src={Etherium}  role="presentation" className="w-24 h-24" />
+      <span className="mt-2 text-center">{t('techdata.Etherium')}</span>
+    </div>,
+    <div className="flex flex-col items-center">
+      <img src={bc}  role="presentation" className="w-24 h-24" />
+      <span className="mt-2 text-center">{t('techdata.bc')}</span>
+    </div>,
+  ];
+  return (
+    <div className="mt-[5.5rem] ">
     <AliceCarousel autoPlay infinite 
       autoPlayStrategy='none' autoPlayInterval={500}
       disableDotsControls disableButtonsControls
@@ -80,5 +83,9 @@ const MyCarousel = () =>
       }}
       items={items} />
   </div>
+  )
+}
+     
+ 
 
 export default MyCarousel;

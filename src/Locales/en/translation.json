@@ -1,10 +1,10 @@
 {
     "pageTitle": "BrewMyCode",
     "menuOptions": {
-        "services": "Home",
-        "work": "About",
-        "latest": "Service",
-        "ourStory": "Contact",
+        "Home": "Home",
+        "About": "About",
+        "Service": "Service",
+        "Contact": "Contact",
         "Language": "Language"
     },
     "mainHeading": "Turning Ideas Into Digital Solutions",
@@ -13,155 +13,168 @@
     "OfferHeading": "What we Offer",
     "offerPara": "Tech that Solves Real Problems. We provide solutions—web, e-commerce, Blockchain, AI, game development, and more. Your ideas transformed into digital experiences—fast and effective.",
     "ServiceHeading": "Our Services",
-    "ServicePara": "",
-    "services": [
-        {
-            "id": 0,
-            "title": "Web Development",
-            
-            "des": "Websites using AI. Platforms that grow with you. Unlock personalized user experiences powered by machine learning. Transform static pages into dynamic, intelligent solutions tailored to your audience. Drive engagement and efficiency with automated insights and adaptive designs."
+    "services.WebDevelopment.title": "Web Development",
+    "services.WebDevelopment.des": "Websites using AI. Platforms that grow with you. Unlock personalized user experiences powered by machine learning. Transform static pages into dynamic, intelligent solutions tailored to your audience. Drive engagement and efficiency with automated insights and adaptive designs.",
+    "services.GameDevelopment.title": "Game Development",
+    "services.GameDevelopment.des": "Blockchain and crypto made simple. Easy integration. Empower your business with secure, decentralized solutions. Seamlessly tokenize assets and explore NFT opportunities. Build trust with cutting-edge blockchain technology tailored to your needs.",
+    "services.ECommerceSolutions.title": "E-commerce Solutions",
+    "services.ECommerceSolutions.des": "Create immersive worlds with stunning visuals and seamless gameplay. Turn concepts into reality with cutting-edge tools and expert development. Build games that captivate and inspire players worldwide.",
+    "services.Blockchain.title": "Blockchain",
+    "services.Blockchain.des": "Optimize your e-commerce experience with intuitive design and robust functionality. Empower your business with seamless payment integrations and advanced analytics. Create a platform that adapts and thrives as you grow.",
+    "whybrewHeading": "Why BrewMyCode ?",
+    "cardsdata": "Expert guidance to simplify your journey Expert guidance to simplify your journey",
+    "TechHeading": "Technology we support",
+    "techdata": {
+        "JS": "JavaScript",
+        "net": "Network",
+        "ploy": "Ploy",
+        "react": "React",
+        "Ruby": "Ruby",
+        "Shopy": "Shopy",
+        "TS": "TypeScript",
+        "WP": "WordPress",
+        "flutter": "Flutter",
+        "Etherium": "Ethereum",
+        "bc": "Blockchain"
+    },
+    "KnowmoreHeading": "Know more about BrewmyCode ",
+    "exp1": "10+",
+    "exp1sub": "Years of Experience",
+    "exp2": "+50",
+    "exp2sub": "Projects Completed",
+    "exp3": "+25",
+    "exp3sub": "World wide Clients",
+    "ServiceData": {
+        "whoWeAre": {
+            "title": "Who we are",
+            "description": "At Brewmycode, we're a small, passionate team turning visions into reality. We love what we do, crafting unique solutions for every founder. No one-size-fits-all—just tailored tech for your ideas."
         },
-        {
-            "id": 1,
-            "title": "Game Development",
-            
-            "des": "Blockchain and crypto made simple. Easy integration. Empower your business with secure, decentralized solutions. Seamlessly tokenize assets and explore NFT opportunities. Build trust with cutting-edge blockchain technology tailored to your needs."
+        "whatMakesUsDifferent": {
+            "title": "What makes us Different",
+            "description": "We blend creativity with practicality. No buzzwords, just clear solutions. We thrive on making your dreams real, treating your ideas like our own."
         },
-        {
-            "id": 2,
-            "title": "E-commerce Solutions",
-           
-            "des": "Create immersive worlds with stunning visuals and seamless gameplay. Turn concepts into reality with cutting-edge tools and expert development. Build games that captivate and inspire players worldwide."
+        "ourPromise": {
+            "title": "Our Promise",
+            "description": "We are your tech partner, not just a service provider. We care about your goals and take pride in every line of code. Your success drives us."
         },
-        {
-            "id": 3,
-            "title": "Blockchain",
-           
-            "des": "Optimize your e-commerce experience with intuitive design and robust functionality. Empower your business with seamless payment integrations and advanced analytics. Create a platform that adapts and thrives as you grow."
+        "whyTrustUs": {
+            "title": "Why Trust Us",
+            "description": "Direct Communication: Talk to real developers. Tailored Solutions: We listen first, then build. Passion for Startups: Your dreams fuel our passion."
         }
-    ],
-    "whybrewHeading" : "Why BrewMyCode ?",
-    "cardsdata" : "Expert guidance to simplify your journey Expert guidance to simplify your journey",
-    "TechHeading" : "Technology we support",
-    "techdata" : [
-            {
-                "name": "JavaScript"
-            },
-            {
-                "name": "Network"
-            },
-            {
-                "name": "Ploy"
-
-            },
-            {
-                "name": "React"
+    },
+    "servicedataBoost" : "Boost in conversions for Brand Y.",
+    "servicedataBoost1" : "New users within six months for Startup X.",
+    "serviceBtn" : "Learn More->",
+    "workHeading": "Our Work",
+    "worksub": "We’ve worked on a lot of projects—e-commerce, blockchain, games, and more. Here, we showcase our best. Each project is a journey we take together, tackling challenges and celebrating wins as friends.",
+    "workcards.WebDevelopment.title": "Web Development",
+    "workcards.WebDevelopment.description": "Blockchain And Crypto Made Simple.",
+    "workcards.GameDevelopment.title": "Game Development",
+    "workcards.GameDevelopment.description": "Blockchain And Crypto Made Simple.",
+    "workcards.Blockchain.title": "Blockchain",
+    "workcards.Blockchain.description": "Blockchain And Crypto Made Simple.",
+    "workcards.EcommerceSolution.title": "Ecommerce Solution",
+    "workcards.EcommerceSolution.description": "Blockchain And Crypto Made Simple.",
+    "testimonalhead": "Words From our Clients",
+    "testimonialsub": "Here’s what some of our clients have to say about working with us ",
+    "testimonialCards.ClientA.name": "Client A",
+    "testimonialCards.ClientA.testimonial": "Brewmycode Helped Us Turn Our Vision Into Reality. The Team Was Dedicated And Made The Process Smooth And Rewarding.",
+    "testimonialCards.ClientB.name": "Client B",
+    "testimonialCards.ClientB.testimonial": "We Went From An Idea To Over 1M Downloads, Thanks To The Incredible Support From Brewmycode.",
+    "testimonialCards.ClientC.name": "Client C",
+    "testimonialCards.ClientC.testimonial": "Their Approach Is Personal, And They Genuinely Care About Your Success. Highly Recommend.",
+    "NeedHelpHeading": "Need Something More ?",
+    "NeedHelpsub": "We craft custom plans to fit your website’s specific needs. Contact Us",
+    "btnNeedHelp": "Book a Help",
+    "footerHeading": "Stay ahead in the digital world!",
+    "footerpara": "Receive exclusive tips, trends, and updates on:",
+    "footersubheading1": "Web Development: Latest frameworks, tools, and best practices.",
+    "footersubheading2": "Digital Solutions: Innovative strategies to enhance your online presence.",
+    "footersubheading3": "Write Your Email",
+    "footerbtn": "Get in Touch",
+    "servicesData": {
+        "WebDevelopment": {
+            "mainHeading": "Web Develpoment",
+            "mainpara": "You need a website that works for you—efficient, scalable, and engaging. At Brewmycode, we focus on creating digital experiences that help you achieve your goals, whether you're starting from scratch or taking things to the next level.",
+            "subHeading": "Custom Web Development",
+            "subpara": "From landing pages to complex platforms, we build tailored solutions that match your business needs. No cookie-cutter designs—only what works for you.",
+            "subhead1": "AI & ML Integration",
+            "subpara1": "When it comes to creating brilliant work and a happy workplace where everyone is able to be their true selves, sharing isn’t optional. It’s vital.",
+            "subhead2": "Responsive Design",
+            "subpara2": "We know people have put a lot into their businesses, so we care about what we do and are dedicated to finding the people who help us do it well.",
+            "subhead3": "Scalable and Secure",
+            "subpara3": "We stand up for the causes we’re driven by, the ideas we cherish and the values we live and breathe.",
+            "subhead4": "Ever questioning",
+            "subpara4": "Our roles transcend our desks. Finding fulfilment comes with asking questions, challenging assumptions and absorbing the world around us"
+        },
+        "GameDevelopment": {
+            "mainHeading": "Game Development",
+            "mainpara": "Your business needs a mobile app that works—fast, reliable, and easy for your users. At Brewmycode, we make apps that reach your users wherever they are, providing simple experiences that fit your goals.",
+            "subHeading": "Custom Mobile Apps That Drive Success We build apps that help your business grow.",
+            "subpara": "",
+            "subhead1": "Custom App Development",
+            "subpara1": "Whether you need an MVP or a full app, we develop what you need. No shortcuts, just the features your users want.",
+            "subhead2": "Cross-Platform Solutions",
+            "subpara2": "Reach users on both iOS and Android with one solution that works well everywhere.",
+            "subhead3": "User-Focused Design",
+            "subpara3": "We make it easy for people to use your app—so they keep coming back.",
+            "subhead4": "Scalable Backend",
+            "subpara4": "A backend that grows with you, keeping your data safe and your app running smoothly."
+        },
+        "ECommerceDevelopment": {
+            "mainHeading": "E-Commerce Development Services",
+            "mainpara": "Your e-commerce store should do more than display products—it needs to convert, provide a seamless shopping experience, and scale with your growth. Brewmycode helps you create a store that does just that.",
+            "subHeading": "E-Commerce That Works for You Transform your online presence with a store built for your customers.",
+            "subpara": "",
+            "subhead1": "Custom E-Commerce Development",
+            "subpara1": "Get a solution tailored to your brand, from niche stores to expansive online marketplaces. We bring your vision to life.",
+            "subhead2": "User Experience Design",
+            "subpara2": "We prioritize making your store easy to use. A smooth, intuitive experience keeps shoppers engaged and encourages purchases.",
+            "subhead3": "Integrated Payments Offer",
+            "subpara3": "Offer customers a choice of payment methods that are safe and convenient, ensuring an easy checkout process every time.",
+            "subhead4": "Inventory Management Tools",
+            "subpara4": "Manage your products, inventory, and orders with streamlined, user-friendly systems that simplify your day-to-day operations."
+        },
+        "BlockchainDevelopment": {
+            "mainHeading": "Blockchain Development Services",
+            "mainpara": "Robust, secure, and scalable blockchain solutions tailored to your business goals. At Brewmycode, we help you unlock the potential of blockchain technology.",
+            "subHeading": "Blockchain Solutions That Drive Innovation",
+            "subpara": "Create blockchain applications that deliver security, transparency, and efficiency.",
+            "subhead1": "Custom Blockchain Development",
+            "subpara1": "Design and build blockchain solutions tailored to your specific business needs, whether it's a decentralized app, a private blockchain, or a custom solution.",
+            "subhead2": "Smart Contract Development",
+            "subpara2": "Automate processes securely with self-executing smart contracts built with precision and reliability.",
+            "subhead3": "Decentralized Applications (dApps)",
+            "subpara3": "Develop intuitive, high-performing decentralized applications for various use cases, from finance to supply chain.",
+            "subhead4": "Blockchain Integration",
+            "subpara4": "Seamlessly integrate blockchain into your existing systems to improve security, transparency, and efficiency."
+        }
+    },
     
-            },
-            {
-                "name": "Ruby"
-
-            },
-            {
-                "name": "Shopy"
-    
-            },
-            {
-                "name": "TypeScript"
-            },
-            {
-                "name": "WordPress"
-            },
-            {
-                "name": "Flutter"
-            
-            },
-            {
-                "name": "Ethereum"
-                
-            },
-            {
-                "name": "Blockchain"
-            }
-        ],
-
-    "KnowmoreHeading" : "Know more about BrewmyCode ",
-    "exp1":"10+",       
-    "exp1sub" : "Years of Experience",
-    "exp2" : "+50",
-    "exp2sub" : "Projects Completed",
-    "exp3" : "+25",
-    "exp3sub" : "World wide Clients",
-        "ServiceData": [
-            {
-                "title": "Who we are",
-                "description": "At Brewmycode, we're a small, passionate team turning visions into reality. We love what we do, crafting unique solutions for every founder. No one-size-fits-all—just tailored tech for your ideas."
-            },
-            {
-                "title": "What makes us Different",
-                "description": "We blend creativity with practicality. No buzzwords, just clear solutions. We thrive on making your dreams real, treating your ideas like our own."
-            },
-            {
-                "title": "Our Promise",
-                "description": "We are your tech partner, not just a service provider. We care about your goals and take pride in every line of code. Your success drives us."
-            },
-            {
-                "title": "Why Trust Us",
-                "description": "Direct Communication: Talk to real developers. Tailored Solutions: We listen first, then build. Passion for Startups: Your dreams fuel our passion."
-            }
-        ],
-        "workHeading" : "Our Work",
-        "worksub":"We’ve worked on a lot of projects—e-commerce, blockchain, games, and more. Here, we showcase our best. Each project is a journey we take together, tackling challenges and celebrating wins as friends.",
-            "workcards": [
-                {
-                    "title": "Web Development",
-                    "description": "Blockchain And Crypto Made Simple."
-                },
-                {
-                    "title": "Game Development",
-                    "description": "Blockchain And Crypto Made Simple."
-                },
-                {
-                    "title": "Blockchain",
-                    "description": "Blockchain And Crypto Made Simple."
-                },
-                {
-                    "title": "Ecommerce Solution",
-                    "description": "Blockchain And Crypto Made Simple."
-                }
-            ],
-            "testimonalhead" : "Words From our Clients",
-            "testimonialsub" : "Here’s what some of our clients have to say about working with us ",
-            
-                "testimonialCards": [
-                    {
-                        "name": "Client A",
-                        "testimonial": "Brewmycode Helped Us Turn Our Vision Into Reality. The Team Was Dedicated And Made The Process Smooth And Rewarding."
-                    },
-                    {
-                        "name": "Client B",
-                        "testimonial": "We Went From An Idea To Over 1M Downloads, Thanks To The Incredible Support From Brewmycode."
-                    },
-                    {
-                        "name": "Client C",
-                        "testimonial": "Their Approach Is Personal, And They Genuinely Care About Your Success. Highly Recommend."
-                    }
-                ],
-                "NeedHelpHeading" : "Need Something More ?",
-                "NeedHelpsub" : "We craft custom plans to fit your website’s specific needs. Contact Us",
-                "btnNeedHelp" : "Book a Help",
-                "footerHeading" : "Stay ahead in the digital world!",
-                "footerpara" : "Receive exclusive tips, trends, and updates on:",
-                "footersubheading1" : "Web Development: Latest frameworks, tools, and best practices.",
-                "footersubheading2" : "Digital Solutions: Innovative strategies to enhance your online presence.",
-                "footersubheading3" : "Write Your Email",
-                "footerbtn" : "Get in Touch"
-        
-    }
-    
-
-    
+        "formSection": {
+            "greeting": "Hello, Let's Talk!",
+            "schedule": "Schedule a 30 min one-to-one call to discuss your goals and challenges",
+            "optionalCall": "This call is optional but highly recommended!",
+            "chooseDate": "Choose a Date",
+            "pickTime": "Pick a time",
+            "allTimes": "All Times are in Indian Time",
+            "back": "Back",
+            "fullName": "Full name",
+            "enterName": "Enter Name",
+            "phoneNumber": "Phone Number",
+            "enterPhoneNumber": "Enter Phone Number",
+            "email": "E-Mail",
+            "enterEmail": "Enter your email",
+            "connectTeam": "Take this opportunity to connect with our team and discover how our platform can empower your business to reach new heights.",
+            "customWebsiteDesign": "✔️Customized website design",
+            "affordablePricing": "✔️Affordable pricing",
+            "seamlessUserExperience": "✔️Seamless user experience",
+            "technicalSupport": "✔️24/7 technical support",
+            "marketingTools": "✔️Integrated digital marketing tools",
+            "bringQuestions": "You can also bring any questions that you might have for us!",
+            "submit": "Submit"
+        }
     
     
 
-
+}

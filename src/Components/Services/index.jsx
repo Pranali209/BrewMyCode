@@ -10,36 +10,39 @@ import Game from '../../assets/webdev.svg'
 import Web from '../../assets/ecommerce.svg'
 import Heading from '../Heading'
 import Button from '../Button'
+import { useTranslation } from 'react-i18next'
 function Services( {isClicked , HandleClicked}) {
+    const { t } = useTranslation()
     const SData = [
         {
             id: 0,
-            title: "Web Development",
+            title: t('services.WebDevelopment.title'),
             NumberImg: one,
             descImg: Web,
-            des: "Websites using AI. Platforms that grow with you. Unlock personalized user experiences powered by machine learning. Transform static pages into dynamic, intelligent solutions tailored to your audience. Drive engagement and efficiency with automated insights and adaptive designs."
-
-        }, {
+            des: t('services.WebDevelopment.des')
+        },
+        {
             id: 1,
-            title: "Game Development",
+            title: t('services.GameDevelopment.title'),
             NumberImg: two,
             descImg: Game,
-            des: "Blockchain and crypto made simple. Easy integration. Empower your business with secure, decentralized solutions. Seamlessly tokenize assets and explore NFT opportunities. Build trust with cutting-edge blockchain technology tailored to your needs."
-        }, {
+            des: t('services.GameDevelopment.des')
+        },
+        {
             id: 2,
-            title: "E- commerce Solutions",
+            title: t('services.ECommerceSolutions.title'),
             NumberImg: three,
             descImg: Ecomm,
-            des: "Create immersive worlds with stunning visuals and seamless gameplay. Turn concepts into reality with cutting-edge tools and expert development. Build games that captivate and inspire players worldwide."
-
-        }, {
+            des: t('services.ECommerceSolutions.des')
+        },
+        {
             id: 3,
-            title: "Blockchain",
+            title: t('services.Blockchain.title'),
             NumberImg: four,
             descImg: blockChain,
-            des: "Optimize your e-commerce experience with intuitive design and robust functionality. Empower your business with seamless payment integrations and advanced analytics. Create a platform that adapts and thrives as you grow."
+            des: t('services.Blockchain.des')
         }
-    ]
+    ];
     return (
         <div className='px-20 flex flex-col  py-10 max-md:px-5'>
             {
@@ -63,7 +66,7 @@ function Services( {isClicked , HandleClicked}) {
                                 <Heading className= " text-lg leading-relaxed max-md:text-sm max-md:leading-snug" as="p"
                                 text = {data.des}/> 
                                 <Button className=' bg-black mt-10 text-white px-4 p-2 mx-auto'
-                                 txt="Learn More ->" 
+                                 txt={t('serviceBtn')}
                                  onClick = {()=>HandleClicked(data.id)}/>
                             </div>
                         </div>

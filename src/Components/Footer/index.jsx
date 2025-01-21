@@ -2,17 +2,20 @@ import React from 'react';
 import Heading from '../Heading';
 import Button from '../Button';
 
+import { useTranslation } from 'react-i18next';
+
 export default function Footer({handleBookCall}) {
+  const { t } = useTranslation();
   return (
     <footer className="container mx-auto p-8 px-14 py-28 max-md:px-8 bg-black text-white ">
-        <Heading  className="text-5xl font-semibold mb-4 text-white" as =" h1" text = "Stay ahead in the digital world!" />
+        <Heading  className="text-5xl font-semibold mb-4 text-white" as =" h1" text = {t('footerHeading')} />
   
-      <p className="text-lg mb-6 mt-5 text-slate-100">Receive exclusive tips, trends, and updates on:</p>
+      <p className="text-lg mb-6 mt-5 text-slate-100">{t('footerpara')}</p>
       <ul className="list-disc list-inside mb-6">
-        <li>Web Development: Latest frameworks, tools, and best practices.</li>
-        <li>Digital Solutions: Innovative strategies to enhance your online presence.</li>
+        <li>{t('footersubheading1')}</li>
+        <li>{t('footersubheading2')}</li>
       </ul>
-      <p className="text-lg font-semibold mb-4">Write Your Email</p>
+      <p className="text-lg font-semibold mb-4">{t('footersubheading3')}</p>
       <div className="flex justify-start">
         <input
           type="email"
@@ -21,7 +24,7 @@ export default function Footer({handleBookCall}) {
         />
       
           <button className=' bg-[#D2F2FF]  text-black px-3 py-1 max-md:px-1  max-md:text-sm  rounded-full'
-          onClick={handleBookCall} >Get in Touch</button>
+          onClick={handleBookCall} >{t('footerbtn')}</button>
       </div>
      <div className='h-20'></div>
     </footer>

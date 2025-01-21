@@ -7,7 +7,7 @@ import App from './App.jsx'
 import IndiService from './pages/IndiService.jsx';
 import Home from './pages/Home.jsx'
 import FormComp from './Components/Form/index.jsx'
-import  './utils/i18Next.js'
+import   './utils/i18next.js'
 
 const router =  createBrowserRouter([
   {

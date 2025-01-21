@@ -12,8 +12,8 @@ function LangDetector({showlangPicker , setLangPicker}) {
     ]
 
     function changeLanguage(lang) {
-        console.log(lang);
-        i18n.changeLanguage(lang)
+        console.log(lang.Lang);
+        i18n.changeLanguage(lang.code)
     }
     return (
         <div className="bg-white  shadow-lg rounded-lg p-4 w-64 absolute top-1 right-1 max-md:z-50 max-md:w-48">
@@ -26,8 +26,8 @@ function LangDetector({showlangPicker , setLangPicker}) {
             <div className=" rounded-lg">
           
                 {languges.map((lang) => (
-                    <div className="p-2 hover:bg-gray-100 cursor-pointer border border-gray-300 mt-4 rounded-md">
-                    <p className=' inline-block  rounded-md ' onClick={()=>changeLanguage(lang.Lang)}>{lang.Lang}</p>
+                    <div className="p-2 hover:bg-gray-100 cursor-pointer border border-gray-300 mt-4 rounded-md" onClick={()=>changeLanguage(lang)}>
+                    <p className=' inline-block  rounded-md ' >{lang.Lang}</p>
                   </div>
                 ))}
            

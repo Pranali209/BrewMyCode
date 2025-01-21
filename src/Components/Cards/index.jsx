@@ -1,11 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import cardBg from '../../assets/cardsBg.svg'
+import { useTranslation } from 'react-i18next';
 
 const CommentCards = () => {
+    const { t } = useTranslation();
+
     const cards = [
-        {  content: "Expert guidance to simplify your journey Expert guidance to simplify your journey" },
-        { content: "Expert guidance to simplify your journey Expert guidance to simplify your journey" },
-        {  content: "Expert guidance to simplify your journey Expert guidance to simplify your journey" },
+        {  content: t('cardsdata') },
+        { content: t('cardsdata')},
+        {  content: t('cardsdata') },
      
     ];
 
