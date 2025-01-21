@@ -78,18 +78,18 @@ body {
 .bubble-effect {
   animation: bubble 2s infinite;
 }
-.inner-shadow { box-shadow: inset -10.96px -6.39px 26.3px 0px rgba(48, 218, 255, 0.52); 
+.inner-shadow { box-shadow: inset -10.96px -6.39px 20px 0px rgba(48, 218, 255, 0.52); 
 }
-.inner-shadow1 { box-shadow:  inset  -11px -6.49px 26.72px rgba(255, 246, 40 , 0.52); 
-}
-
-.inner-shadow2 { box-shadow: inset -11.16px -6.49px 26.72px 0px rgba(255, 67, 67, 0.52); 
+.inner-shadow1 { box-shadow:  inset  -4px -7.49px 20px rgba(255, 246, 40, 0.52); 
 }
 
-.inner-shadow3 { box-shadow: inset -11.16px -6.49px 26.72px 0px rgba(255, 54, 150, 0.52); 
+.inner-shadow2 { box-shadow: inset -11.16px -6.49px 20px 0px rgba(255, 101, 101, 0.52); 
 }
 
-.inner-shadow4 { box-shadow: inset -11.16px -6.49px 26.72px 0px rgba(65, 255, 106, 0.52); 
+.inner-shadow3 { box-shadow: inset -11.16px -6.49px 20px 0px rgba(255, 103, 177, 0.52); 
+}
+
+.inner-shadow4 { box-shadow: inset -11.16px -6.49px 20px 0px rgba(65, 255, 106, 0.52); 
 }
 
 .react-calendar__tile--active { background-color: black !important; color: white !important; /* Change text color to white for contrast */ }

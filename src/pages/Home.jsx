@@ -76,7 +76,7 @@ function Home() {
                     <Header />
                 </div>
             </section>
-            <section id="Hero" className='mt-20 w-[50%] mx-auto relative max-md:px-5 max-md:w-full max-md:mt-10'>
+            <section id="Hero" className='mt-20 w-[50%] mx-auto relative max-md:px-5 max-md:w-full max-md:mt-14'>
                 <Heading className="text-7xl text-center font-semibold leading-snug txtaligmnt" as="h1"
                     text={t('mainHeading')} />
                 <AnimatedBlock />
