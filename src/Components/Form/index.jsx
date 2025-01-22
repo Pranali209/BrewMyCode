@@ -17,28 +17,41 @@ function FormComp() {
 
   function handleFormSubmit(e) {
     e.preventDefault();
-    setFormdata({
-      name: e.target[0].value,
-      date: selectedDate.toISOString().slice(0, 10),
-      time: selectedTime,
-      phone: e.target[1].value,
-      email: e.target[2].value
-    })
+    console.log(selectedDate);
+    
+   if(selectedDate < new Date()){
+    alert('Please select a date in the future')
+   }
+   else{
 
-    e.target.reset()
-    setSelectedTime('')
-    setSelectedDate(new Date())
-    setUsername('Name')
-    alert("Data submitted Successfully");
-
+   
+    
+    if(e.target[0].value < 0 || e.target[1].value < 0 ||e.target[2].value < 0  || selectedDate.toISOString().length == 0||
+        selectedTime.length==0  ){
+            alert('Please fill in all fields');
+        }
+     else{
+        setFormdata({
+            name: e.target[0].value,
+            date: selectedDate.toISOString().slice(0, 10),
+            time: selectedTime,
+            phone: e.target[1].value,
+            email: e.target[2].value
+          })
+      
+           e.target.reset()
+          setSelectedTime('')
+          setSelectedDate(new Date())
+       
+          
+          alert("Data submitted Successfully");
+     }
+  
+    }
 
   }
 
-  const getFirstName = (fullName) => {
-
-   setUsername(fullName.split(' ')[0]);
-   
-  };
+ 
   const navigate = useNavigate()
 
   const times = ['9:30', '10:00', '10:30', '11:00', '11:30', '12:00', '12:30', '13:00', '13:30'];
@@ -69,7 +82,7 @@ function FormComp() {
                         {times.map((time) => (
                             <button
                                 key={time}
-                                className={`bg-[#f4f4f5] hover:bg-black max-md:px-2 max-md:mb-5 text-black px-4 py-2 rounded-md ${selectedTime === time ? 'bg-black text-white' : ''}`}
+                                className={`bg-[#f4f4f5] hover:bg-black hover:text-white max-md:px-2 max-md:mb-5 text-black px-4 py-2 rounded-md ${selectedTime === time ? 'bg-black text-white' : ''}`}
                                 onClick={() => handleTimeChange(time)}
                             >
                                 {time}
@@ -96,7 +109,7 @@ function FormComp() {
                             name="full_name" 
                             className="w-full bg-[#f4f4f5] border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#2562eb]" 
                             placeholder={t('formSection.enterName')} 
-                            onChange={(e) => getFirstName(e.target.value)} 
+                           
                         />
                     </div>
                     <div className="mb-4">
