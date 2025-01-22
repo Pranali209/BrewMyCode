@@ -252,7 +252,7 @@ html{
   
 }
 
-@media (min-width: 376px) and (max-width: 426px) {
+@media (min-width: 376px) and (max-width: 430px) {
   .footeraligment {
     left: 50%;
     transform: translateX(-50%);
