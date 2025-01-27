@@ -17,7 +17,7 @@ function FormComp() {
 
         if (date > new Date()) {
             setSelectedDate(date);
-            setFormdata(false)
+            setShowForm(false)
         }
     };
     const handleTimeChange = (time) => { 
@@ -30,12 +30,14 @@ function FormComp() {
 
     function handleFormSubmit(e) {
         e.preventDefault();
+        console.log(e);
+        
         if (selectedDate < new Date()) {
             alert('Please select a date in the future')
         }
         else {
 
-            if (e.target[0].value < 0 || e.target[1].value < 0 || e.target[2].value < 0 || selectedDate.toISOString().length == 0 ||
+            if ((e.target[0].value == "") || (e.target[1].value== "") || (e.target[2].value == "" )|| selectedDate.toISOString().length == 0 ||
                 selectedTime.length == 0) {
                     
                 alert('Please fill in all fields');
@@ -48,17 +50,18 @@ function FormComp() {
                     phone: e.target[1].value,
                     email: e.target[2].value
                 })
-
+             
                 e.target.reset()
                 setSelectedTime('')
                 setSelectedDate(new Date())
                 setShowForm(false)
-                if(formdata){
-                    alert("Data submitted Successfully");
-                }
-                else{
-                    alert("Please fill in all fields");
-                }
+                
+                    alert('Form submitted successfully')
+                
+                    
+                
+                
+            
                  
               
             }
