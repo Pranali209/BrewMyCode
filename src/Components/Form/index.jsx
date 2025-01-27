@@ -30,17 +30,14 @@ function FormComp() {
 
     function handleFormSubmit(e) {
         e.preventDefault();
-       
-
         if (selectedDate < new Date()) {
             alert('Please select a date in the future')
         }
         else {
 
-
-
             if (e.target[0].value < 0 || e.target[1].value < 0 || e.target[2].value < 0 || selectedDate.toISOString().length == 0 ||
                 selectedTime.length == 0) {
+                    
                 alert('Please fill in all fields');
             }
             else {
@@ -56,8 +53,14 @@ function FormComp() {
                 setSelectedTime('')
                 setSelectedDate(new Date())
                 setShowForm(false)
-
-                alert("Data submitted Successfully");
+                if(formdata){
+                    alert("Data submitted Successfully");
+                }
+                else{
+                    alert("Please fill in all fields");
+                }
+                 
+              
             }
 
         }
