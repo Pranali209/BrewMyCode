@@ -78,7 +78,7 @@ function FormComp() {
         
     
         <div className=" container mx-auto py-10 max-md:py-5 flex justify-between max-md:flex-col">
-            <section className="w-[50%] max-md:w-[90%]">
+            <section className="w-[50%] max-md:w-[80%]">
                 <div className="bg-[#0a0b0b] text-white p-4 w-full mb-8 px-32 max-md:px-5 py-8 rounded-r-md">
                     <h2 className="text-4xl font-bold mb-2 max-md:text-2xl">{t('formSection.greeting')}</h2>
                     <p className="text-lg mt-5 w-[70%] max-md:text-sm max-md:w-full">{t('formSection.schedule')}</p>
@@ -92,7 +92,7 @@ function FormComp() {
                             !(selectedDate > new Date()) &&(
 
                             
-                            <section className=' shadow-lg  max-md:mt-[-30px] max-md:w-[120%]'>
+                            <section className=' shadow-lg  max-md:mt-[-30px] max-md:w-[105%]'>
                                 <h3 className="text-xl font-bold mb-4  ml-5 mt-5 ">{t('formSection.chooseDate')}</h3>
                                 <div className="bg-white shadow-lg rounded-lg p-2">
                                     <Calendar
