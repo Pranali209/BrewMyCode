@@ -95,7 +95,7 @@ function FormComp() {
                             !(selectedDate > new Date()) &&(
 
                             
-                            <section className=' shadow-lg  max-md:mt-[-30px] max-md:w-[105%]'>
+                            <section className=' shadow-lg  max-md:mt-[-30px] max-md:w-[107%]'>
                                 <h3 className="text-xl font-bold mb-4  ml-5 mt-5 ">{t('formSection.chooseDate')}</h3>
                                 <div className="bg-white shadow-lg rounded-lg p-2">
                                     <Calendar
