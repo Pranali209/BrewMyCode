@@ -17,7 +17,7 @@ const CommentCards = () => {
     useEffect(() => {
         const interval = setInterval(() => {
             setCurrentCardIndex((prevIndex) => (prevIndex + 1) % cards.length);
-        }, 3000); 
+        }, 1500); 
 
         return () => clearInterval(interval); 
     }, [cards.length]);
