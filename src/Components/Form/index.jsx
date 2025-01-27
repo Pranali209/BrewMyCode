@@ -30,9 +30,7 @@ function FormComp() {
 
     function handleFormSubmit(e) {
         e.preventDefault();
-        if(selectedTime.length>0 ){
-            alert('please select time ')
-        }
+       
 
         if (selectedDate < new Date()) {
             alert('Please select a date in the future')
