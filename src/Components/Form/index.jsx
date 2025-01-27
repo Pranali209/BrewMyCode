@@ -92,7 +92,7 @@ function FormComp() {
                             !(selectedDate > new Date()) &&(
 
                             
-                            <section className=' shadow-lg  max-md:mt-[-40px]'>
+                            <section className=' shadow-lg  max-md:mt-[-30px]'>
                                 <h3 className="text-xl font-bold mb-4  ml-5 mt-5 ">{t('formSection.chooseDate')}</h3>
                                 <div className="bg-white shadow-lg rounded-lg p-2">
                                     <Calendar
@@ -123,7 +123,7 @@ function FormComp() {
                         ) 
                         }
                           { !showForm &&  selectedDate > new Date() &&(
-                            <section className={` slide-in py-3 px-5 lg:hidden max-md:block`}>
+                            <section className={` slide-in py-3 px-5 lg:hidden max-md:block w-[120%]`}>
                                 <h3 className="text-xl font-bold mb-6">{t('formSection.pickTime')}</h3>
                                 <div className="grid grid-cols-3 gap-[4rem] max-md:gap-5 m-5">
                                     {times.map((time) => (
