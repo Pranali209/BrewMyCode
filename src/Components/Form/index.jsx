@@ -78,7 +78,7 @@ function FormComp() {
         
     
         <div className=" container mx-auto py-10 max-md:py-5 flex justify-between max-md:flex-col">
-            <section className="w-[50%] max-md:w-[80%]">
+            <section className="w-[50%] max-md:w-[90%]">
                 <div className="bg-[#0a0b0b] text-white p-4 w-full mb-8 px-32 max-md:px-5 py-8 rounded-r-md">
                     <h2 className="text-4xl font-bold mb-2 max-md:text-2xl">{t('formSection.greeting')}</h2>
                     <p className="text-lg mt-5 w-[70%] max-md:text-sm max-md:w-full">{t('formSection.schedule')}</p>
