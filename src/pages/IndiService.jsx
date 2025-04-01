@@ -90,7 +90,7 @@ function IndiService() {
     return (
         <div className='flex items-center justify-center h-screen mx-auto bg-slate-200 '>
 
-            <div className=' border-2 border-black    max-md:px-5  p-10 
+            <div className=' border-2 border-black    max-md:px-5  p-10 max-md:mt-80
              w-[75%] max-md:w-[90%]  
               bg-slate-100 z-30  opacity-[0.9]  shadow-md Elemt  ' >
 
@@ -104,7 +104,7 @@ function IndiService() {
                         <p className='mt-3 font-semibold'>{serviceData.mainparaSubHead}</p>
                         <p className='text-[0.9rem] mt-2 max-md:text-center max-md:text-sm'>{serviceData.mainpara}</p>
                     </div>
-                    <a href="/">
+                    <a href="/" className=" max-md:absolute max-md:top-10 max-md:right-8">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" className='h-6'>
                   
                     <path fill="#050505" d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>

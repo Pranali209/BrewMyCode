@@ -7,21 +7,26 @@ const CommentCards = () => {
     const { t } = useTranslation();
 
     const cards = [
-        { Htxt: t('cardshead1'), content: t('cardsdata1') },
-        { Htxt: t('cardshead2') ,content: t('cardsdata2')},
-        { Htxt:t('cardshead3'), content: t('cardsdata3') },
+        { Htxt: t('cardshead1'), content: t('cardsData3') },
+        { Htxt: t('cardshead2') ,content: t('cardsData2')},
+        { Htxt:t('cardshead3'), content: t('cardsData3') },
      
     ];
 
     const [currentCardIndex, setCurrentCardIndex] = useState(0);
+    const[currentCardTxt , setCurrentCartTxt] = useState(cards[0].Htxt)
 
     useEffect(() => {
         const interval = setInterval(() => {
             setCurrentCardIndex((prevIndex) => (prevIndex + 1) % cards.length);
-        }, 1500); 
-
+           
+          
+            console.log(currentCardIndex , "before");
+        }, 2000); 
+      
+        console.log(currentCardIndex , "after");
         return () => clearInterval(interval); 
-    }, [cards.length]);
+    }, []);
 
     return (
       <div className='relative'>
@@ -32,14 +37,18 @@ const CommentCards = () => {
           
             {cards.map((card, index) => (
                 <>
-               
+                 
+                 
+                  
                  <li
                     key={index}
-                    className={`card shadow-xl ${index === currentCardIndex ? 'card--current' : 'card--out'} `}
-                >
-                     <h1 className='text-lg text-center max-md:text-sm'>{card.Htxt}</h1>
+                    className={`card shadow-xl ${index === currentCardIndex ? 'card--current' : 'card--out'} `} >
+                     <h2 className='font-semibold '>{card.Htxt}</h2>
+                     <p className='text-sm'>{card.content}</p>
+                     
                    
                 </li>
+                
                 </>
                
             ))}

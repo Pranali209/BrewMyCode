@@ -1,7 +1,7 @@
 {
     "pageTitle": "BrewMyCode",
     "menuOptions": {
-        "Home": "Home",
+        "Home": "Work",
         "About": "About",
         "Service": "Service",
         "Contact": "Contact",
@@ -23,11 +23,11 @@
     "services.Blockchain.des": "Your dev team, without the hiring drama.We match you with skilled developers who work as part of your team — daily communication, fast iterations, real ownership. Scale your tech team without the overhead.",
     "whybrewHeading": "Why BrewMyCode ?",
     "cardshead1": "We Collaborate Like a Tech Co-Founder, Not a Vendor",
-    "cardsdata1": "We think about your product like it’s ours — offering ideas, not just execution.",
-    "cardshead2": "We Collaborate Like a Tech Co-Founder, Not a Vendor",
-    "cardsdata2": "We think about your product like it’s ours — offering ideas, not just execution.",
-    "cardshead3": "We Collaborate Like a Tech Co-Founder, Not a Vendor",
-    "cardsdata3": "We think about your product like it’s ours — offering ideas, not just execution.",
+    "cardsData1" : "We think about your product like it’s ours — offering ideas, not just execution.",
+    "cardshead2": "Always in the Loop — Daily Updates, Transparent Process",
+    "cardsData2" : "You’ll never have to guess what’s going on or chase us for progress",
+    "cardshead3": "Serious About Deadlines. Obsessed With Quality.",
+    "cardsData3" : "We deliver on time, every time — without cutting corners.",
     "TechHeading": "Technology we support",
     "techdata": {
         "JS": "JavaScript",
