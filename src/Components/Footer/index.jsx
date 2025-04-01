@@ -7,15 +7,16 @@ import { useTranslation } from 'react-i18next';
 export default function Footer({handleBookCall}) {
   const { t } = useTranslation();
   return (
-    <footer className="container mx-auto p-8 px-14 py-28 max-md:px-8 bg-black text-white ">
-        <Heading  className="text-5xl font-semibold mb-4 text-white" as =" h1" text = {t('footerHeading')} />
+    <footer className="container p-8 mx-auto text-white bg-black px-14 py-28 max-md:px-8 ">
+        <Heading  className="mb-4 text-5xl font-semibold text-white" as =" h1" text = {t('footerHeading')} />
   
-      <p className="text-lg mb-6 mt-5 text-slate-100">{t('footerpara')}</p>
-      <ul className="list-disc list-inside mb-6">
+      
+      <ul className="mb-6 list-disc list-inside w-[70%]">
         <li>{t('footersubheading1')}</li>
+        <p className='ml-5 '> {t('footerpara')}</p>
         <li>{t('footersubheading2')}</li>
       </ul>
-      <p className="text-lg font-semibold mb-4">{t('footersubheading3')}</p>
+      <p className="mb-4 text-lg font-semibold">{t('footersubheading3')}</p>
       <div className="flex justify-start">
         <input
           type="email"

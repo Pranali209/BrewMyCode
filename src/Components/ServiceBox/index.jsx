@@ -16,10 +16,10 @@ function ServiceBox({ id, icon, title, description, bgcolour, border }) {
                 <div className={` rounded-xl   flex  items-center  gap-4 max-md:gap-4 border-[1px] border-gray-500`}
                     style={{ backgroundColor: `${bgcolour}`, borderColor: `${border}` }}>
                     <div className={` rounded-xl m-[0.2rem] p-2 gap-4  shadow-lg`}>
-                        <img src={icon} alt="service1" className=' w-5 h-5 inline-block mr-2' />
+                        <img src={icon} alt="service1" className='inline-block w-5 h-5 mr-2 ' />
 
-                        <span className="font-semibold text-lg mr-2 ">{title}</span>
-                        <div className=' p-1  inline hover:cursor-pointer'
+                        <span className="mr-2 text-lg font-semibold ">{title}</span>
+                        <div className='inline p-1 hover:cursor-pointer'
                             style={{ backgroundColor: `${bgcolour}`, borderColor: `${border}` }} >
                             <span className="text-lg text-gray-600" onClick={toggleOptions}>{showOptions ? '-' : '+'}</span>
                         </div>
@@ -34,8 +34,8 @@ function ServiceBox({ id, icon, title, description, bgcolour, border }) {
                 {
                     showOptions && (<>
                     
-                        <p className="mb-20 max-md:mb-10  mt-5  max-md:mt-2 max-md:text-sm ">{description}</p>
-                        <hr className="border-gray-300 w-full mb-8 max-md:mb-4" />
+                        <p className="mt-5 mb-20 max-md:mb-10 max-md:mt-2 max-md:text-sm ">{description}</p>
+                        <hr className="w-full mb-8 border-gray-300 max-md:mb-4" />
                     </>
 
                     )

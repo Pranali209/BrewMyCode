@@ -44,28 +44,28 @@ function Services( {isClicked , HandleClicked}) {
         }
     ];
     return (
-        <div className='px-20 flex flex-col  py-10 max-md:px-5'>
+        <div className='flex flex-col px-20 py-10 max-md:px-5'>
             {
                 SData.map((data) => {
                     return (
-                        <div className='flex justify-around items-center my-20 max-md:my-10 max-md:flex-col ' key={data.id}>
-                            <div className='  relative    h-64 w-72 max-md:mb-24 '>
+                        <div className='flex items-center justify-around my-20 max-md:my-10 max-md:flex-col ' key={data.id}>
+                            <div className='relative h-64 w-72 max-md:mb-24'>
                                 <img src={data.NumberImg} alt="" className=' animate-upDown' />
-                                <div className=' bg-white  absolute  w-full flex flex-col max-md:px-5 '
+                                <div className='absolute flex flex-col w-full bg-white max-md:px-5'
                                 style={data.id === 0 ? { marginTop: '-90px' } : { marginTop : '-67px'}}>
-                                    <Heading className="text-xl text-left " as="h2"
+                                    <Heading className="text-[1.1rem] text-left " as="h2"
                                         text={data.title}
                                     />
-                                    <div className=' flex justify-end'>
+                                    <div className='flex justify-end '>
                                         <img src={data.descImg} alt="" className="w-[11rem] h-[11rem]  " />
                                     </div>
 
                                 </div>
                             </div>
                             <div className=' w-[55%] max-md:w-full '>
-                                <Heading className= " text-lg leading-relaxed max-md:text-sm max-md:leading-snug" as="p"
+                                <Heading className= "text-lg leading-relaxed max-md:text-sm max-md:leading-snug" as="p"
                                 text = {data.des}/> 
-                                <Button className=' bg-black mt-10 text-white px-4 p-2 mx-auto'
+                                <Button className='p-2 px-4 mx-auto mt-10 text-white bg-black '
                                  txt={t('serviceBtn')}
                                  onClick = {()=>HandleClicked(data.id)}/>
                             </div>
