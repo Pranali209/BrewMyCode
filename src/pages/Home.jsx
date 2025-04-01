@@ -28,7 +28,7 @@ function Home() {
     }
 
     function handleBookCall(params) {
-        navigate('/form');
+        window.location.href = "https://cal.com/brewmycode/discovery-call?user=brewmycode";
     }
 
   

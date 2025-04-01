@@ -19,7 +19,7 @@ function FooterAnimation() {
 <section className=' w-full  absolute bottom-1 flex max-md:flex-col max-md:justify-center  py-[28px] px-[30px] justify-between text-white'>
                 <section className='flex text-left max-md:text-center max-md:flex-col max-md:mb-3'>
                     <nav>
-                        <a href="mailto:info@brewmycode.com" className='text-white'>Contact us</a>
+                        <a href="mailto:info@brewmycode.com" className='text-white '>Contact us</a>
                     </nav>
                 </section>
                 <section className="relative text-center text-white max-md:mb-4">
@@ -30,7 +30,7 @@ function FooterAnimation() {
 
                 <section className='flex max-md:text-center max-md:flex-col '>
                     <nav>
-                        <a >Brewmycode : 3518342-5</a>
+                        <a className='text-white '>Brewmycode : 3518342-5</a>
                     </nav>
                 </section>
             </section>
