@@ -18,14 +18,15 @@ function HandleLanguagePicker(params)
   console.log(showlangPicker);
 }
   return (
-    <header className="flex items-center justify-between p-3 px-8 py-6 max-md:px-4 ">
+    <header className="flex items-center justify-between p-3 px-8 py-6 max-md:px-4">
       <div className="flex items-center justify-between w-full">
         <h1 className="mr-4 text-2xl font-bold text-black max-md:text-3xl">Brewmycode</h1>
-        <nav className="space-x-4 max-md:hidden lg:block">
-          <a href="#Work" className="text-gray-700 hover:text-black "  >{t('menuOptions.Home')}</a>
-
-          <a href="#Services" className="text-gray-700 hover:text-black ">{t('menuOptions.Service')}</a>
-          <a href="#NeedHelp" className="text-gray-700 hover:text-black ">{t('menuOptions.Contact')}</a>
+        <nav className="-ml-10 max-md:hidden lg:block">
+        <a href=""></a>
+          <a href="#Work" className="text-gray-700 hover:text-black"  >{t('menuOptions.Home')}</a>
+          <a href="#Services" className="ml-3 text-gray-700 hover:text-black ">{t('menuOptions.Service')}</a>
+          <a href="#NeedHelp" className="ml-3 text-gray-700 hover:text-black ">{t('menuOptions.Contact')}</a>
+          
         </nav>
         <div className="flex items-center space-x-4">
         <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 640 512"  

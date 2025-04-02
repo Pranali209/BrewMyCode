@@ -38,9 +38,9 @@ const WorkBox = () => {
           {
             index === 1 ? <div className='mt-10'>
               <img src={card.image} alt={card.title} className={`ml-60 max-md:ml-1 mb-2 w-[80%]  max-md:w-full shadow-2xl ${card.count} `} />
-              <div className="flex justify-between my-10 ml-60 max-md:ml-1 max-md:mx-3 w-[55%]  max-md:w-full max-md:flex-col">
+              <div className="flex justify-between my-10 ml-60 max-md:ml-1 max-md:mx-3 w-[65%]  max-md:w-full max-md:flex-col">
 
-                <h2 className="text-lg font-semibold ">{card.title}</h2>
+                <a href={`https://${card.title}`} className="text-lg font-semibold cursor-pointer ">{card.title}</a>
                 <p className="ml-2 text-lg text-left text-gray-600 max-md:ml-0 max-md:text-base ">{card.description}</p>
 
 
@@ -48,9 +48,10 @@ const WorkBox = () => {
             </div> :
               <div className='mt-10'>
                 <img src={card.image} alt={card.title} className={` mb-2 w-[80%] max-md:w-full shadow-2xl ${card.count} `} />
-                <div className="flex justify-between my-10 max-md:mx-3 w-[50%] max-md:w-full max-md:flex-col">
+                <div className={`flex justify-between my-10 max-md:mx-3 ${index === 2 ? 'w-[45%]' : 'w-[62%]'
+                  } max-md:w-full max-md:flex-col`}>
 
-                  <p className="text-lg font-semibold ">{card.title}</p>
+                  <a href={`https://${card.title}`} className="text-lg font-semibold cursor-pointer ">{card.title}</a>
                   <p className="ml-2 text-lg text-gray-600 max-md:ml-0 max-md:text-base ">{card.description}</p>
 
 

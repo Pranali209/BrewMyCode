@@ -23,9 +23,9 @@ function FooterAnimation() {
                     </nav>
                 </section>
                 <section className="relative text-center text-white max-md:mb-4">
-                    <span >Made with</span>
+                    <span >Made with </span>
                     <span >🤍</span>
-                    <span>in Helsinki</span>
+                    <span> in Helsinki</span>
                 </section>
 
                 <section className='flex max-md:text-center max-md:flex-col '>
