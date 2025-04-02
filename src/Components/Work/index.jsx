@@ -41,7 +41,7 @@ const WorkBox = () => {
               <div className="flex justify-between my-10 ml-60 max-md:ml-1 max-md:mx-3 w-[55%]  max-md:w-full max-md:flex-col">
 
                 <h2 className="text-lg font-semibold ">{card.title}</h2>
-                <p className="ml-2 text-lg text-left text-gray-600 max-md:text-base ">{card.description}</p>
+                <p className="ml-2 text-lg text-left text-gray-600 max-md:ml-0 max-md:text-base ">{card.description}</p>
 
 
               </div>
@@ -51,7 +51,7 @@ const WorkBox = () => {
                 <div className="flex justify-between my-10 max-md:mx-3 w-[50%] max-md:w-full max-md:flex-col">
 
                   <p className="text-lg font-semibold ">{card.title}</p>
-                  <p className="ml-2 text-lg text-gray-600 max-md:text-base ">{card.description}</p>
+                  <p className="ml-2 text-lg text-gray-600 max-md:ml-0 max-md:text-base ">{card.description}</p>
 
 
                 </div>

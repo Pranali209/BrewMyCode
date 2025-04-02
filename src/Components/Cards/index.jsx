@@ -43,8 +43,8 @@ const CommentCards = () => {
                  <li
                     key={index}
                     className={`card shadow-xl ${index === currentCardIndex ? 'card--current' : 'card--out'} `} >
-                     <h2 className='font-semibold '>{card.Htxt}</h2>
-                     <p className='text-sm'>{card.content}</p>
+                     <h2 className='font-semibold max-md:text-xs '>{card.Htxt}</h2>
+                     <p className='text-sm max-md:text-xs'>{card.content}</p>
                      
                    
                 </li>

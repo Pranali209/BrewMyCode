@@ -148,7 +148,7 @@ function Home() {
                     text={t('testimonialsub')} />
                 <Testimonials />
             </section> */}
-            <section id='NeedHelp' className='flex flex-col items-center py-40'>
+            <section id='NeedHelp' className='flex flex-col items-center py-20'>
                 <Heading className="text-center font-semibold text-[2.5rem] text-black" as="h1"
                     text={t('NeedHelpHeading')} />
                 <Heading className="px-48 py-10 text-lg leading-relaxed text-center text-black max-md:text-sm max-md:px-2 max-md:py-10"

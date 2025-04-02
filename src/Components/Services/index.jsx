@@ -53,7 +53,7 @@ function Services( {isClicked , HandleClicked}) {
                                 <img src={data.NumberImg} alt="" className=' animate-upDown' />
                                 <div className='absolute flex flex-col w-full bg-white max-md:px-5'
                                 style={data.id === 0 ? { marginTop: '-90px' } : { marginTop : '-67px'}}>
-                                    <Heading className="text-[1.1rem] text-left " as="h2"
+                                    <Heading className="text-[1.1rem] text-left  max-md:text-[0.95rem]" as="h2"
                                         text={data.title}
                                     />
                                     <div className='flex justify-end '>

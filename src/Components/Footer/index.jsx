@@ -11,9 +11,9 @@ export default function Footer({handleBookCall}) {
         <Heading  className="mb-4 text-5xl font-semibold text-white" as =" h1" text = {t('footerHeading')} />
   
       
-      <ul className="mb-6 list-disc list-inside w-[70%]">
+      <ul className="mb-6 list-disc lg:list-inside w-[70%] max-md:w-full ">
         <li>{t('footersubheading1')}</li>
-        <p className='ml-5 '> {t('footerpara')}</p>
+        <p className='ml-5 max-md:ml-0 '> {t('footerpara')}</p>
         <li>{t('footersubheading2')}</li>
       </ul>
       <p className="mb-4 text-lg font-semibold">{t('footersubheading3')}</p>
@@ -25,7 +25,7 @@ export default function Footer({handleBookCall}) {
         />
       
           <button className=' bg-[#D2F2FF]  text-black px-3 py-1 max-md:px-1  max-md:text-sm  rounded-full'
-          onClick={handleBookCall} >{t('footerbtn')}</button>
+         >{t('footerbtn')}</button>
       </div>
      <div className='h-20'></div>
     </footer>
