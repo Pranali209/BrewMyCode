@@ -21,7 +21,11 @@ export default function Footer({handleBookCall}) {
             `email= ${e.target[0].value}`
           )
         }).then((res) => res.text()).then((data)=>{
-           setRes(data)
+          setRes(data)
+          setInterval(()=>{
+            setRes('')
+          },2000)
+          
         }).catch((err) => {
           console.log(err)
         })
